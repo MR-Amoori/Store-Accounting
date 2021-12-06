@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AccountingStore_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Customer_TB">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Family" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NumberPhone" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="70" />
+          <Property Name="Address" Type="nvarchar" MaxLength="150" />
+          <Property Name="Reference" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Item_TB">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ItemIdView" Type="int" Nullable="false" />
+          <Property Name="ItemName" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ItemCategory" Type="int" Nullable="false" />
+          <Property Name="ItemAmountKharid" Type="int" Nullable="false" />
+          <Property Name="ItemAmountrosh" Type="int" Nullable="false" />
+          <Property Name="ItemNumber" Type="int" Nullable="false" />
+          <Property Name="ItemCaption" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ItemCategoryType">
+          <Key>
+            <PropertyRef Name="ItemCategoryTypeId" />
+          </Key>
+          <Property Name="ItemCategoryTypeId" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Item_TB_ItemCategoryType">
+          <End Role="ItemCategoryType" Type="Self.ItemCategoryType" Multiplicity="1" />
+          <End Role="Item_TB" Type="Self.Item_TB" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ItemCategoryType">
+              <PropertyRef Name="ItemCategoryTypeId" />
+            </Principal>
+            <Dependent Role="Item_TB">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AccountingStore_DBModelStoreContainer">
+          <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Item_TB" EntityType="Self.Item_TB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ItemCategoryType" EntityType="Self.ItemCategoryType" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Item_TB_ItemCategoryType" Association="Self.FK_Item_TB_ItemCategoryType">
+            <End Role="ItemCategoryType" EntitySet="ItemCategoryType" />
+            <End Role="Item_TB" EntitySet="Item_TB" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AccountingStore_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Customer_TB">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Family" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NumberPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Reference" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AccountingStore_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" />
+          <EntitySet Name="Item_TB" EntityType="AccountingStore_DBModel.Item_TB" />
+          <EntitySet Name="ItemCategoryType" EntityType="AccountingStore_DBModel.ItemCategoryType" />
+          <AssociationSet Name="FK_Item_TB_ItemCategoryType" Association="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType">
+            <End Role="ItemCategoryType" EntitySet="ItemCategoryType" />
+            <End Role="Item_TB" EntitySet="Item_TB" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Item_TB">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ItemIdView" Type="Int32" Nullable="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ItemCategory" Type="Int32" Nullable="false" />
+          <Property Name="ItemAmountKharid" Type="Int32" Nullable="false" />
+          <Property Name="ItemAmountrosh" Type="Int32" Nullable="false" />
+          <Property Name="ItemNumber" Type="Int32" Nullable="false" />
+          <Property Name="ItemCaption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ItemCategoryType" Relationship="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType" FromRole="Item_TB" ToRole="ItemCategoryType" />
+        </EntityType>
+        <EntityType Name="ItemCategoryType">
+          <Key>
+            <PropertyRef Name="ItemCategoryTypeId" />
+          </Key>
+          <Property Name="ItemCategoryTypeId" Type="Int32" Nullable="false" />
+          <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Item_TB" Relationship="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType" FromRole="ItemCategoryType" ToRole="Item_TB" />
+        </EntityType>
+        <Association Name="FK_Item_TB_ItemCategoryType">
+          <End Type="AccountingStore_DBModel.ItemCategoryType" Role="ItemCategoryType" Multiplicity="1" />
+          <End Type="AccountingStore_DBModel.Item_TB" Role="Item_TB" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ItemCategoryType">
+              <PropertyRef Name="ItemCategoryTypeId" />
+            </Principal>
+            <Dependent Role="Item_TB">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AccountingStore_DBModelStoreContainer" CdmEntityContainer="AccountingStore_DBEntities">
+          <EntitySetMapping Name="Customer_TB">
+            <EntityTypeMapping TypeName="AccountingStore_DBModel.Customer_TB">
+              <MappingFragment StoreEntitySet="Customer_TB">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Family" ColumnName="Family" />
+                <ScalarProperty Name="NumberPhone" ColumnName="NumberPhone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Item_TB">
+            <EntityTypeMapping TypeName="AccountingStore_DBModel.Item_TB">
+              <MappingFragment StoreEntitySet="Item_TB">
+                <ScalarProperty Name="ItemCaption" ColumnName="ItemCaption" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="ItemAmountrosh" ColumnName="ItemAmountrosh" />
+                <ScalarProperty Name="ItemAmountKharid" ColumnName="ItemAmountKharid" />
+                <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ItemIdView" ColumnName="ItemIdView" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ItemCategoryType">
+            <EntityTypeMapping TypeName="AccountingStore_DBModel.ItemCategoryType">
+              <MappingFragment StoreEntitySet="ItemCategoryType">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="ItemCategoryTypeId" ColumnName="ItemCategoryTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
