@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Convertor\DateConvertor.cs" />
     <Compile Include="Convertor\RtlMessageBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

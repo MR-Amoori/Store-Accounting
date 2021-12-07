@@ -205,6 +205,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\بدون بکگراند.png" />
+    <None Include="Resources\Layer 23.png" />
+    <None Include="Resources\Layer 5.png" />
+    <None Include="Resources\Layer 1.png" />
+    <None Include="Resources\LogoCover.png" />
+    <None Include="Resources\LogoCoverLand.png" />
+    <None Include="Resources\پوستر مغازه.png" />
     <Content Include="WinValidator\New Text Document.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

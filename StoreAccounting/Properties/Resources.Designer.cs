@@ -213,16 +213,6 @@ namespace StoreAccounting.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Layer_8 {
-            get {
-                object obj = ResourceManager.GetObject("Layer_8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap list2 {
             get {
                 object obj = ResourceManager.GetObject("list2", resourceCulture);
@@ -236,6 +226,16 @@ namespace StoreAccounting.Properties {
         internal static System.Drawing.Bitmap Lock {
             get {
                 object obj = ResourceManager.GetObject("Lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoCoverLand {
+            get {
+                object obj = ResourceManager.GetObject("LogoCoverLand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +276,16 @@ namespace StoreAccounting.Properties {
         internal static System.Drawing.Bitmap Users {
             get {
                 object obj = ResourceManager.GetObject("Users", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap پوستر_مغازه {
+            get {
+                object obj = ResourceManager.GetObject("پوستر_مغازه", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

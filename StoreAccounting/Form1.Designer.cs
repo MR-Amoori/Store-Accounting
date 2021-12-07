@@ -29,21 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData1 = new DevComponents.DotNetBar.Controls.ClockStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData1 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData2 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData3 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData1 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData4 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData5 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData2 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData6 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData3 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData7 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData8 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData9 = new DevComponents.DotNetBar.Controls.ClockStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData65 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData66 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData67 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData25 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData68 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData69 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData26 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData70 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData27 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData71 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData72 = new DevComponents.DotNetBar.Controls.ColorData();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.sideNav1 = new DevComponents.DotNetBar.Controls.SideNav();
-            this.sideNavPanel4 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.sideNavPanel1 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.calculator1 = new DevComponents.Editors.Calculator();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblCustomerInMnHome = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AnalogClock = new DevComponents.DotNetBar.Controls.AnalogClockControl();
+            this.txtDateTime = new System.Windows.Forms.Label();
+            this.sideNavPanel2 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel3 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.dgvCustomers = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,12 +80,17 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.txtFilter = new System.Windows.Forms.ToolStripTextBox();
-            this.sideNavPanel2 = new DevComponents.DotNetBar.Controls.SideNavPanel();
-            this.sideNavPanel1 = new DevComponents.DotNetBar.Controls.SideNavPanel();
-            this.txtDateTime = new System.Windows.Forms.Label();
-            this.AnalogClock = new DevComponents.DotNetBar.Controls.AnalogClockControl();
-            this.sideNavPanel6 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel8 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.sideNavPanel4 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.sideNavPanel6 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel7 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel9 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel5 = new DevComponents.DotNetBar.Controls.SideNavPanel();
@@ -85,29 +106,47 @@
             this.sideNavItem2 = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.mnAbout = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblItemsInMnHome = new System.Windows.Forms.Label();
+            this.lblSakhtInMnHome = new System.Windows.Forms.Label();
+            this.lblNarmInMnHome = new System.Windows.Forms.Label();
+            this.txtExperessSearch = new System.Windows.Forms.TextBox();
+            this.btnSerachMobile = new System.Windows.Forms.Button();
+            this.btnSearchEmalls = new System.Windows.Forms.Button();
             this.sideNav1.SuspendLayout();
+            this.sideNavPanel1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.sideNavPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            this.sideNavPanel1.SuspendLayout();
+            this.sideNavPanel4.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideNav1
             // 
-            this.sideNav1.Controls.Add(this.sideNavPanel3);
-            this.sideNav1.Controls.Add(this.sideNavPanel4);
-            this.sideNav1.Controls.Add(this.sideNavPanel2);
             this.sideNav1.Controls.Add(this.sideNavPanel1);
-            this.sideNav1.Controls.Add(this.sideNavPanel6);
+            this.sideNav1.Controls.Add(this.sideNavPanel3);
+            this.sideNav1.Controls.Add(this.sideNavPanel5);
+            this.sideNav1.Controls.Add(this.sideNavPanel9);
+            this.sideNav1.Controls.Add(this.sideNavPanel2);
             this.sideNav1.Controls.Add(this.sideNavPanel8);
             this.sideNav1.Controls.Add(this.sideNavPanel7);
-            this.sideNav1.Controls.Add(this.sideNavPanel9);
-            this.sideNav1.Controls.Add(this.sideNavPanel5);
+            this.sideNav1.Controls.Add(this.sideNavPanel6);
+            this.sideNav1.Controls.Add(this.sideNavPanel4);
             this.sideNav1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sideNav1.EnableClose = false;
             this.sideNav1.EnableMaximize = false;
             this.sideNav1.EnableSplitter = false;
-            this.sideNav1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideNav1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sideNav1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.sideNavItem1,
             this.separator1,
@@ -127,15 +166,261 @@
             this.sideNav1.TabIndex = 0;
             this.sideNav1.Text = "درباره ما";
             // 
-            // sideNavPanel4
+            // sideNavPanel1
             // 
-            this.sideNavPanel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel4.Location = new System.Drawing.Point(137, 31);
-            this.sideNavPanel4.Name = "sideNavPanel4";
-            this.sideNavPanel4.Size = new System.Drawing.Size(757, 529);
-            this.sideNavPanel4.TabIndex = 18;
-            this.sideNavPanel4.Visible = false;
+            this.sideNavPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel1.Controls.Add(this.groupBox5);
+            this.sideNavPanel1.Controls.Add(this.groupBox3);
+            this.sideNavPanel1.Controls.Add(this.groupBox2);
+            this.sideNavPanel1.Controls.Add(this.groupBox1);
+            this.sideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel1.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel1.Name = "sideNavPanel1";
+            this.sideNavPanel1.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel1.TabIndex = 2;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnSearchEmalls);
+            this.groupBox5.Controls.Add(this.btnSerachMobile);
+            this.groupBox5.Controls.Add(this.txtExperessSearch);
+            this.groupBox5.Controls.Add(this.pictureBox2);
+            this.groupBox5.Controls.Add(this.pictureBox1);
+            this.groupBox5.Location = new System.Drawing.Point(12, 16);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox5.Size = new System.Drawing.Size(431, 241);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "کاورلند ";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::StoreAccounting.Properties.Resources.پوستر_مغازه;
+            this.pictureBox2.Location = new System.Drawing.Point(253, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(147, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::StoreAccounting.Properties.Resources.LogoCoverLand;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.calculator1);
+            this.groupBox3.Location = new System.Drawing.Point(248, 278);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox3.Size = new System.Drawing.Size(200, 240);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "ماشن حساب : ";
+            // 
+            // calculator1
+            // 
+            this.calculator1.AutoSize = true;
+            this.calculator1.Location = new System.Drawing.Point(5, 20);
+            this.calculator1.Name = "calculator1";
+            this.calculator1.Size = new System.Drawing.Size(190, 211);
+            this.calculator1.Text = "calculator1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.groupBox9);
+            this.groupBox2.Controls.Add(this.groupBox8);
+            this.groupBox2.Controls.Add(this.groupBox7);
+            this.groupBox2.Controls.Add(this.groupBox4);
+            this.groupBox2.Location = new System.Drawing.Point(461, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox2.Size = new System.Drawing.Size(285, 502);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "پیام های برنامه  ";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.lblNarmInMnHome);
+            this.groupBox9.Location = new System.Drawing.Point(6, 382);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(273, 111);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "اعلان خدمات نرم افزاری : ";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.lblSakhtInMnHome);
+            this.groupBox8.Location = new System.Drawing.Point(6, 263);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(273, 100);
+            this.groupBox8.TabIndex = 0;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "اعلان خدمات سخت افزاری : ";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.lblItemsInMnHome);
+            this.groupBox7.Location = new System.Drawing.Point(6, 141);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(273, 100);
+            this.groupBox7.TabIndex = 0;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "اعلان اجناس : ";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.lblCustomerInMnHome);
+            this.groupBox4.Location = new System.Drawing.Point(6, 21);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(273, 100);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "اعلان مشتریان : ";
+            // 
+            // lblCustomerInMnHome
+            // 
+            this.lblCustomerInMnHome.AutoSize = true;
+            this.lblCustomerInMnHome.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerInMnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblCustomerInMnHome.Location = new System.Drawing.Point(82, 45);
+            this.lblCustomerInMnHome.Name = "lblCustomerInMnHome";
+            this.lblCustomerInMnHome.Size = new System.Drawing.Size(117, 18);
+            this.lblCustomerInMnHome.TabIndex = 0;
+            this.lblCustomerInMnHome.Text = "فعلا پیامی نیست";
+            this.lblCustomerInMnHome.Click += new System.EventHandler(this.lblCustomers_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.AnalogClock);
+            this.groupBox1.Controls.Add(this.txtDateTime);
+            this.groupBox1.Location = new System.Drawing.Point(12, 278);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox1.Size = new System.Drawing.Size(223, 240);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "تاریخ و ساعت : ";
+            // 
+            // AnalogClock
+            // 
+            this.AnalogClock.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.AnalogClock.ClockStyle = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
+            colorData65.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData65.BrushAngle = 90F;
+            colorData65.BrushSBSScale = 1F;
+            colorData65.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData65.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            colorData65.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData9.BezelColor = colorData65;
+            colorData66.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData66.BorderWidth = 0.01F;
+            colorData66.BrushSBSScale = 1F;
+            colorData66.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            colorData66.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            clockStyleData9.CapColor = colorData66;
+            clockStyleData9.CapSize = 0.1F;
+            colorData67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData67.BrushAngle = 90F;
+            colorData67.BrushSBSScale = 1F;
+            colorData67.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData67.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            colorData67.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            clockStyleData9.FaceColor = colorData67;
+            clockStyleData9.GlassAngle = 0;
+            colorData68.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData68.BorderWidth = 0.01F;
+            colorData68.BrushAngle = 90F;
+            colorData68.BrushSBSScale = 1F;
+            colorData68.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData68.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData68.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData25.HandColor = colorData68;
+            clockHandStyleData25.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData25.Length = 0.45F;
+            clockHandStyleData25.Width = 0.175F;
+            clockStyleData9.HourHandStyle = clockHandStyleData25;
+            colorData69.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData69.BorderWidth = 0.01F;
+            colorData69.BrushSBSScale = 1F;
+            colorData69.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData69.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData9.LargeTickColor = colorData69;
+            clockStyleData9.LargeTickWidth = 0.01F;
+            colorData70.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData70.BorderWidth = 0.01F;
+            colorData70.BrushAngle = 90F;
+            colorData70.BrushSBSScale = 1F;
+            colorData70.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData70.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData70.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData26.HandColor = colorData70;
+            clockHandStyleData26.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData26.Length = 0.75F;
+            clockHandStyleData26.Width = 0.175F;
+            clockStyleData9.MinuteHandStyle = clockHandStyleData26;
+            clockStyleData9.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData9.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            clockHandStyleData27.DrawOverCap = true;
+            colorData71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData71.BorderWidth = 0.01F;
+            colorData71.BrushSBSScale = 1F;
+            colorData71.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData71.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockHandStyleData27.HandColor = colorData71;
+            clockHandStyleData27.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
+            clockHandStyleData27.Length = 0.9F;
+            clockHandStyleData27.Width = 0.01F;
+            clockStyleData9.SecondHandStyle = clockHandStyleData27;
+            colorData72.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData72.BorderWidth = 0.01F;
+            colorData72.BrushSBSScale = 1F;
+            colorData72.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData72.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData9.SmallTickColor = colorData72;
+            clockStyleData9.SmallTickLength = 0.01F;
+            clockStyleData9.SmallTickWidth = 0.01F;
+            clockStyleData9.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
+            this.AnalogClock.ClockStyleData = clockStyleData9;
+            this.AnalogClock.Location = new System.Drawing.Point(24, 30);
+            this.AnalogClock.Name = "AnalogClock";
+            this.AnalogClock.Size = new System.Drawing.Size(162, 162);
+            this.AnalogClock.TabIndex = 1;
+            this.AnalogClock.Text = "ساعت";
+            this.AnalogClock.TimeZone = "Iran Standard Time";
+            this.AnalogClock.Value = new System.DateTime(2021, 12, 5, 3, 30, 55, 814);
+            // 
+            // txtDateTime
+            // 
+            this.txtDateTime.AutoSize = true;
+            this.txtDateTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateTime.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtDateTime.Location = new System.Drawing.Point(40, 199);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.Size = new System.Drawing.Size(55, 21);
+            this.txtDateTime.TabIndex = 2;
+            this.txtDateTime.Text = "*تاریخ*";
+            // 
+            // sideNavPanel2
+            // 
+            this.sideNavPanel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel2.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel2.Name = "sideNavPanel2";
+            this.sideNavPanel2.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel2.TabIndex = 6;
+            this.sideNavPanel2.Visible = false;
             // 
             // sideNavPanel3
             // 
@@ -143,10 +428,11 @@
             this.sideNavPanel3.Controls.Add(this.dgvCustomers);
             this.sideNavPanel3.Controls.Add(this.toolStrip1);
             this.sideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel3.Location = new System.Drawing.Point(137, 31);
+            this.sideNavPanel3.Location = new System.Drawing.Point(142, 31);
             this.sideNavPanel3.Name = "sideNavPanel3";
-            this.sideNavPanel3.Size = new System.Drawing.Size(757, 529);
+            this.sideNavPanel3.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel3.TabIndex = 14;
+            this.sideNavPanel3.Visible = false;
             // 
             // dgvCustomers
             // 
@@ -165,21 +451,21 @@
             this.Email,
             this.Address,
             this.Reference});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvCustomers.Location = new System.Drawing.Point(0, 62);
             this.dgvCustomers.Name = "dgvCustomers";
             this.dgvCustomers.ReadOnly = true;
             this.dgvCustomers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgvCustomers.Size = new System.Drawing.Size(757, 467);
+            this.dgvCustomers.Size = new System.Drawing.Size(752, 467);
             this.dgvCustomers.TabIndex = 1;
             // 
             // CustomerID
@@ -250,7 +536,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStrip1.Size = new System.Drawing.Size(757, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(752, 62);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -336,154 +622,112 @@
             this.txtFilter.Size = new System.Drawing.Size(100, 62);
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
-            // sideNavPanel2
+            // sideNavPanel8
             // 
-            this.sideNavPanel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel2.Location = new System.Drawing.Point(137, 31);
-            this.sideNavPanel2.Name = "sideNavPanel2";
-            this.sideNavPanel2.Size = new System.Drawing.Size(757, 529);
-            this.sideNavPanel2.TabIndex = 6;
-            this.sideNavPanel2.Visible = false;
+            this.sideNavPanel8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel8.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel8.Name = "sideNavPanel8";
+            this.sideNavPanel8.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel8.TabIndex = 34;
+            this.sideNavPanel8.Visible = false;
             // 
-            // sideNavPanel1
+            // sideNavPanel4
             // 
-            this.sideNavPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel1.Controls.Add(this.txtDateTime);
-            this.sideNavPanel1.Controls.Add(this.AnalogClock);
-            this.sideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel1.Location = new System.Drawing.Point(137, 31);
-            this.sideNavPanel1.Name = "sideNavPanel1";
-            this.sideNavPanel1.Size = new System.Drawing.Size(757, 529);
-            this.sideNavPanel1.TabIndex = 2;
-            this.sideNavPanel1.Visible = false;
+            this.sideNavPanel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel4.Controls.Add(this.toolStrip2);
+            this.sideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel4.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel4.Name = "sideNavPanel4";
+            this.sideNavPanel4.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel4.TabIndex = 18;
+            this.sideNavPanel4.Visible = false;
             // 
-            // txtDateTime
+            // toolStrip2
             // 
-            this.txtDateTime.AutoSize = true;
-            this.txtDateTime.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateTime.ForeColor = System.Drawing.Color.ForestGreen;
-            this.txtDateTime.Location = new System.Drawing.Point(293, 454);
-            this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.Size = new System.Drawing.Size(75, 30);
-            this.txtDateTime.TabIndex = 2;
-            this.txtDateTime.Text = "*تاریخ*";
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator5,
+            this.toolStripButton2,
+            this.toolStripSeparator6,
+            this.toolStripButton3,
+            this.toolStripSeparator7,
+            this.toolStripButton4});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip2.Size = new System.Drawing.Size(752, 25);
+            this.toolStrip2.TabIndex = 0;
+            this.toolStrip2.Text = "toolStrip2";
             // 
-            // AnalogClock
+            // toolStripButton1
             // 
-            this.AnalogClock.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.AnalogClock.ClockStyle = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            colorData1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData1.BrushAngle = 90F;
-            colorData1.BrushSBSScale = 1F;
-            colorData1.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            colorData1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData1.BezelColor = colorData1;
-            colorData2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData2.BorderWidth = 0.01F;
-            colorData2.BrushSBSScale = 1F;
-            colorData2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            colorData2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            clockStyleData1.CapColor = colorData2;
-            clockStyleData1.CapSize = 0.1F;
-            colorData3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData3.BrushAngle = 90F;
-            colorData3.BrushSBSScale = 1F;
-            colorData3.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            colorData3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            clockStyleData1.FaceColor = colorData3;
-            clockStyleData1.GlassAngle = 0;
-            colorData4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData4.BorderWidth = 0.01F;
-            colorData4.BrushAngle = 90F;
-            colorData4.BrushSBSScale = 1F;
-            colorData4.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData1.HandColor = colorData4;
-            clockHandStyleData1.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData1.Length = 0.45F;
-            clockHandStyleData1.Width = 0.175F;
-            clockStyleData1.HourHandStyle = clockHandStyleData1;
-            colorData5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData5.BorderWidth = 0.01F;
-            colorData5.BrushSBSScale = 1F;
-            colorData5.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData5.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData1.LargeTickColor = colorData5;
-            clockStyleData1.LargeTickWidth = 0.01F;
-            colorData6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData6.BorderWidth = 0.01F;
-            colorData6.BrushAngle = 90F;
-            colorData6.BrushSBSScale = 1F;
-            colorData6.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData6.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData6.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData2.HandColor = colorData6;
-            clockHandStyleData2.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData2.Length = 0.75F;
-            clockHandStyleData2.Width = 0.175F;
-            clockStyleData1.MinuteHandStyle = clockHandStyleData2;
-            clockStyleData1.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData1.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            clockHandStyleData3.DrawOverCap = true;
-            colorData7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData7.BorderWidth = 0.01F;
-            colorData7.BrushSBSScale = 1F;
-            colorData7.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData7.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockHandStyleData3.HandColor = colorData7;
-            clockHandStyleData3.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
-            clockHandStyleData3.Length = 0.9F;
-            clockHandStyleData3.Width = 0.01F;
-            clockStyleData1.SecondHandStyle = clockHandStyleData3;
-            colorData8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData8.BorderWidth = 0.01F;
-            colorData8.BrushSBSScale = 1F;
-            colorData8.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData8.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData1.SmallTickColor = colorData8;
-            clockStyleData1.SmallTickLength = 0.01F;
-            clockStyleData1.SmallTickWidth = 0.01F;
-            clockStyleData1.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            this.AnalogClock.ClockStyleData = clockStyleData1;
-            this.AnalogClock.Location = new System.Drawing.Point(191, 77);
-            this.AnalogClock.Name = "AnalogClock";
-            this.AnalogClock.Size = new System.Drawing.Size(363, 363);
-            this.AnalogClock.TabIndex = 1;
-            this.AnalogClock.Text = "ساعت";
-            this.AnalogClock.TimeZone = "Iran Standard Time";
-            this.AnalogClock.Value = new System.DateTime(2021, 12, 5, 3, 30, 55, 814);
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "toolStripButton4";
             // 
             // sideNavPanel6
             // 
             this.sideNavPanel6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.sideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel6.Location = new System.Drawing.Point(137, 31);
+            this.sideNavPanel6.Location = new System.Drawing.Point(142, 31);
             this.sideNavPanel6.Name = "sideNavPanel6";
-            this.sideNavPanel6.Size = new System.Drawing.Size(757, 529);
+            this.sideNavPanel6.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel6.TabIndex = 26;
             this.sideNavPanel6.Visible = false;
-            // 
-            // sideNavPanel8
-            // 
-            this.sideNavPanel8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel8.Location = new System.Drawing.Point(1, 1);
-            this.sideNavPanel8.Name = "sideNavPanel8";
-            this.sideNavPanel8.Size = new System.Drawing.Size(732, 559);
-            this.sideNavPanel8.TabIndex = 34;
-            this.sideNavPanel8.Visible = false;
             // 
             // sideNavPanel7
             // 
             this.sideNavPanel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.sideNavPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel7.Location = new System.Drawing.Point(1, 1);
+            this.sideNavPanel7.Location = new System.Drawing.Point(142, 31);
             this.sideNavPanel7.Name = "sideNavPanel7";
-            this.sideNavPanel7.Size = new System.Drawing.Size(732, 559);
+            this.sideNavPanel7.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel7.TabIndex = 30;
             this.sideNavPanel7.Visible = false;
             // 
@@ -491,9 +735,9 @@
             // 
             this.sideNavPanel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.sideNavPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel9.Location = new System.Drawing.Point(1, 1);
+            this.sideNavPanel9.Location = new System.Drawing.Point(142, 31);
             this.sideNavPanel9.Name = "sideNavPanel9";
-            this.sideNavPanel9.Size = new System.Drawing.Size(732, 559);
+            this.sideNavPanel9.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel9.TabIndex = 38;
             this.sideNavPanel9.Visible = false;
             // 
@@ -501,9 +745,9 @@
             // 
             this.sideNavPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.sideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel5.Location = new System.Drawing.Point(1, 1);
+            this.sideNavPanel5.Location = new System.Drawing.Point(142, 31);
             this.sideNavPanel5.Name = "sideNavPanel5";
-            this.sideNavPanel5.Size = new System.Drawing.Size(732, 559);
+            this.sideNavPanel5.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel5.TabIndex = 22;
             this.sideNavPanel5.Visible = false;
             // 
@@ -526,11 +770,13 @@
             // 
             // mnHome
             // 
+            this.mnHome.Checked = true;
             this.mnHome.Name = "mnHome";
             this.mnHome.Panel = this.sideNavPanel1;
             this.mnHome.Symbol = "";
             this.mnHome.Text = "خانه";
             this.mnHome.Title = "داشبورد";
+            this.mnHome.Click += new System.EventHandler(this.mnHome_Click);
             // 
             // mnReports
             // 
@@ -540,10 +786,10 @@
             this.mnReports.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.mnReports.Text = "گزارشات";
             this.mnReports.Title = "گزارشات فروش";
+            this.mnReports.Click += new System.EventHandler(this.mnReports_Click);
             // 
             // mnCustomers
             // 
-            this.mnCustomers.Checked = true;
             this.mnCustomers.Name = "mnCustomers";
             this.mnCustomers.Panel = this.sideNavPanel3;
             this.mnCustomers.Symbol = "";
@@ -558,6 +804,7 @@
             this.mnItems.Symbol = "";
             this.mnItems.Text = "کالا ها";
             this.mnItems.Title = "مدیریت اجناس";
+            this.mnItems.Click += new System.EventHandler(this.mnItems_Click);
             // 
             // mnServicesSoft
             // 
@@ -567,6 +814,7 @@
             this.mnServicesSoft.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.mnServicesSoft.Text = "خدمات نرم افزاری";
             this.mnServicesSoft.Title = "لیست خدمات نرم افزاری";
+            this.mnServicesSoft.Click += new System.EventHandler(this.mnServicesSoft_Click);
             // 
             // sideNavItem3
             // 
@@ -576,6 +824,7 @@
             this.sideNavItem3.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.sideNavItem3.Text = "خدمات سخت افزاری";
             this.sideNavItem3.Title = "لیست خدمات سخت افزاری";
+            this.sideNavItem3.Click += new System.EventHandler(this.sideNavItem3_Click);
             // 
             // mnNewAccounting
             // 
@@ -584,6 +833,7 @@
             this.mnNewAccounting.Symbol = "";
             this.mnNewAccounting.Text = "تراکنش جدید";
             this.mnNewAccounting.Title = "فروش جدید";
+            this.mnNewAccounting.Click += new System.EventHandler(this.mnNewAccounting_Click);
             // 
             // sideNavItem2
             // 
@@ -593,6 +843,7 @@
             this.sideNavItem2.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.sideNavItem2.Text = "تنظیمات";
             this.sideNavItem2.Title = "تنظیمات نرم افزار";
+            this.sideNavItem2.Click += new System.EventHandler(this.sideNavItem2_Click);
             // 
             // mnAbout
             // 
@@ -602,11 +853,80 @@
             this.mnAbout.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.mnAbout.Text = "درباره ما";
             this.mnAbout.Title = "اطلاعات برنامه نویس و فروشگاه";
+            this.mnAbout.Click += new System.EventHandler(this.mnAbout_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblItemsInMnHome
+            // 
+            this.lblItemsInMnHome.AutoSize = true;
+            this.lblItemsInMnHome.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItemsInMnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblItemsInMnHome.Location = new System.Drawing.Point(82, 46);
+            this.lblItemsInMnHome.Name = "lblItemsInMnHome";
+            this.lblItemsInMnHome.Size = new System.Drawing.Size(117, 18);
+            this.lblItemsInMnHome.TabIndex = 0;
+            this.lblItemsInMnHome.Text = "فعلا پیامی نیست";
+            this.lblItemsInMnHome.Click += new System.EventHandler(this.lblCustomers_Click);
+            // 
+            // lblSakhtInMnHome
+            // 
+            this.lblSakhtInMnHome.AutoSize = true;
+            this.lblSakhtInMnHome.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSakhtInMnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblSakhtInMnHome.Location = new System.Drawing.Point(82, 47);
+            this.lblSakhtInMnHome.Name = "lblSakhtInMnHome";
+            this.lblSakhtInMnHome.Size = new System.Drawing.Size(117, 18);
+            this.lblSakhtInMnHome.TabIndex = 0;
+            this.lblSakhtInMnHome.Text = "فعلا پیامی نیست";
+            this.lblSakhtInMnHome.Click += new System.EventHandler(this.lblCustomers_Click);
+            // 
+            // lblNarmInMnHome
+            // 
+            this.lblNarmInMnHome.AutoSize = true;
+            this.lblNarmInMnHome.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNarmInMnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblNarmInMnHome.Location = new System.Drawing.Point(82, 54);
+            this.lblNarmInMnHome.Name = "lblNarmInMnHome";
+            this.lblNarmInMnHome.Size = new System.Drawing.Size(117, 18);
+            this.lblNarmInMnHome.TabIndex = 0;
+            this.lblNarmInMnHome.Text = "فعلا پیامی نیست";
+            this.lblNarmInMnHome.Click += new System.EventHandler(this.lblCustomers_Click);
+            // 
+            // txtExperessSearch
+            // 
+            this.txtExperessSearch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExperessSearch.Location = new System.Drawing.Point(253, 141);
+            this.txtExperessSearch.Name = "txtExperessSearch";
+            this.txtExperessSearch.Size = new System.Drawing.Size(147, 23);
+            this.txtExperessSearch.TabIndex = 1;
+            this.txtExperessSearch.Text = "         سرچ سریع";
+            this.txtExperessSearch.Click += new System.EventHandler(this.txtExperessSearch_Click);
+            // 
+            // btnSerachMobile
+            // 
+            this.btnSerachMobile.BackColor = System.Drawing.SystemColors.Info;
+            this.btnSerachMobile.Location = new System.Drawing.Point(290, 206);
+            this.btnSerachMobile.Name = "btnSerachMobile";
+            this.btnSerachMobile.Size = new System.Drawing.Size(75, 27);
+            this.btnSerachMobile.TabIndex = 2;
+            this.btnSerachMobile.Text = "Mobile.ir";
+            this.btnSerachMobile.UseVisualStyleBackColor = false;
+            this.btnSerachMobile.Click += new System.EventHandler(this.btnSerachMobile_Click);
+            // 
+            // btnSearchEmalls
+            // 
+            this.btnSearchEmalls.BackColor = System.Drawing.SystemColors.Info;
+            this.btnSearchEmalls.Location = new System.Drawing.Point(290, 171);
+            this.btnSearchEmalls.Name = "btnSearchEmalls";
+            this.btnSearchEmalls.Size = new System.Drawing.Size(75, 28);
+            this.btnSearchEmalls.TabIndex = 2;
+            this.btnSearchEmalls.Text = "Emalls.ir";
+            this.btnSearchEmalls.UseVisualStyleBackColor = false;
+            this.btnSearchEmalls.Click += new System.EventHandler(this.btnSearchGSM_Click);
             // 
             // Form1
             // 
@@ -616,20 +936,39 @@
             this.Controls.Add(this.sideNav1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "فروشگاه موبایل کاورلند";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sideNav1.ResumeLayout(false);
             this.sideNav1.PerformLayout();
+            this.sideNavPanel1.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.sideNavPanel3.ResumeLayout(false);
             this.sideNavPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.sideNavPanel1.ResumeLayout(false);
-            this.sideNavPanel1.PerformLayout();
+            this.sideNavPanel4.ResumeLayout(false);
+            this.sideNavPanel4.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -678,6 +1017,32 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private DevComponents.Editors.Calculator calculator1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblCustomerInMnHome;
+        private System.Windows.Forms.Label lblNarmInMnHome;
+        private System.Windows.Forms.Label lblSakhtInMnHome;
+        private System.Windows.Forms.Label lblItemsInMnHome;
+        private System.Windows.Forms.Button btnSearchEmalls;
+        private System.Windows.Forms.Button btnSerachMobile;
+        private System.Windows.Forms.TextBox txtExperessSearch;
     }
 }
 
