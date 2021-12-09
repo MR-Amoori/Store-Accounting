@@ -47,6 +47,7 @@ namespace StoreAccounting
         private void mnCustomers_Click_1(object sender, EventArgs e)
         {
             BindGridCustomer();
+  
         }
 
         private void btnNewCustomer_Click(object sender, EventArgs e)
@@ -98,14 +99,14 @@ namespace StoreAccounting
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             BindGridCustomer();
-            txtFilter.Text = "";
+            txtFilterCustomer.Text = "";
         }
 
         private void txtFilter_TextChanged(object sender, EventArgs e)
         {
             using (UnitOfWork db = new UnitOfWork())
             {
-                dgvCustomers.DataSource = db.CustomerReoisitorry.GetCustomerByFilter(txtFilter.Text);
+                dgvCustomers.DataSource = db.CustomerReoisitorry.GetCustomerByFilter(txtFilterCustomer.Text);
             }
         }
 
@@ -132,6 +133,11 @@ namespace StoreAccounting
         private void mnItems_Click(object sender, EventArgs e)
         {
             DisposMnCustomer();
+            using (UnitOfWork db=new UnitOfWork())
+            {
+                dgvItems.AutoGenerateColumns = false;
+                dgvItems.DataSource = db.GenericRepositoryItem.Get();
+            }
         }
 
         private void mnServicesSoft_Click(object sender, EventArgs e)
@@ -172,6 +178,18 @@ namespace StoreAccounting
         private void btnSerachMobile_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.mobile.ir/phones/search.aspx?terms="+txtExperessSearch.Text+"&submit="); 
+        }
+
+        private void btnTel_Click(object sender, EventArgs e)
+        {
+            string NumberPhone = dgvCustomers.CurrentRow.Cells[3].Value.ToString();
+         System.Diagnostics.Process.Start("callto: 12345");
+        }
+
+        private void btnNewItem_Click(object sender, EventArgs e)
+        {
+            Itams.frmItems frmItem = new Itams.frmItems();
+            frmItem.ShowDialog();
         }
     }
 }

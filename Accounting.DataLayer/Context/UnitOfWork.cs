@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Accounting.DataLayer.Context
 {
-     public class UnitOfWork : IDisposable
+    public class UnitOfWork : IDisposable
     {
         AccountingStore_DBEntities db = new AccountingStore_DBEntities();
 
@@ -16,11 +16,24 @@ namespace Accounting.DataLayer.Context
         {
             get
             {
-                if (_CustomerRepository==null)
+                if (_CustomerRepository == null)
                 {
                     _CustomerRepository = new CustomerRepository(db);
                 }
                 return _CustomerRepository;
+            }
+        }
+
+        private GenericRepository<Item_TB> _genericRepositoryItem;
+        public GenericRepository<Item_TB> GenericRepositoryItem
+        {
+            get
+            {
+                if (_genericRepositoryItem == null)
+                {
+                    _genericRepositoryItem = new GenericRepository<Item_TB>(db);
+                }
+                return _genericRepositoryItem;
             }
         }
 
