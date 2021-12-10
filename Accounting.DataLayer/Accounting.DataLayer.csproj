@@ -65,6 +65,7 @@
     <Compile Include="Repository\IItemRepository.cs" />
     <Compile Include="Services\CustomerRepository.cs" />
     <Compile Include="Services\GenericRepository.cs" />
+    <Compile Include="Services\ItemRepository.cs" />
     <Compile Include="StoreAccounting_DbEn.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,7 +82,12 @@
       <DependentUpon>StoreAccounting_DbEn.edmx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.ViewModels\Accounting.ViewModels.csproj">
+      <Project>{88ec45b3-0dcc-479b-88e6-e42c3b1d973f}</Project>
+      <Name>Accounting.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="StoreAccounting_DbEn.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

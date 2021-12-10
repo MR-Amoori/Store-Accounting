@@ -47,7 +47,7 @@ namespace StoreAccounting
         private void mnCustomers_Click_1(object sender, EventArgs e)
         {
             BindGridCustomer();
-  
+
         }
 
         private void btnNewCustomer_Click(object sender, EventArgs e)
@@ -133,7 +133,7 @@ namespace StoreAccounting
         private void mnItems_Click(object sender, EventArgs e)
         {
             DisposMnCustomer();
-            using (UnitOfWork db=new UnitOfWork())
+            using (UnitOfWork db = new UnitOfWork())
             {
                 dgvItems.AutoGenerateColumns = false;
                 dgvItems.DataSource = db.GenericRepositoryItem.Get();
@@ -172,24 +172,27 @@ namespace StoreAccounting
 
         private void btnSearchGSM_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start($"https://emalls.ir/List.aspx?Search="+txtExperessSearch.Text);
+            System.Diagnostics.Process.Start($"https://emalls.ir/List.aspx?Search=" + txtExperessSearch.Text);
         }
 
         private void btnSerachMobile_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.mobile.ir/phones/search.aspx?terms="+txtExperessSearch.Text+"&submit="); 
+            System.Diagnostics.Process.Start("https://www.mobile.ir/phones/search.aspx?terms=" + txtExperessSearch.Text + "&submit=");
         }
 
         private void btnTel_Click(object sender, EventArgs e)
         {
             string NumberPhone = dgvCustomers.CurrentRow.Cells[3].Value.ToString();
-         System.Diagnostics.Process.Start("callto: 12345");
+            System.Diagnostics.Process.Start("callto: 12345");
         }
 
         private void btnNewItem_Click(object sender, EventArgs e)
         {
             Itams.frmItems frmItem = new Itams.frmItems();
-            frmItem.ShowDialog();
+            if (frmItem.ShowDialog() == DialogResult.OK)
+            {
+
+            }
         }
     }
 }

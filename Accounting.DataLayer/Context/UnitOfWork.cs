@@ -37,6 +37,20 @@ namespace Accounting.DataLayer.Context
             }
         }
 
+        private ItemRepository _itemRepository;
+        public ItemRepository ItemRepository
+        {
+            get
+            {
+                if (_itemRepository==null)
+                {
+                    _itemRepository = new ItemRepository(db);
+                }
+                return _itemRepository;
+            }
+        }
+
+
         public void Save()
         {
             db.SaveChanges();

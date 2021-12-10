@@ -212,6 +212,10 @@
       <Project>{8865ad52-d28d-4f47-94ec-2bc57ed144ff}</Project>
       <Name>Accounting.Utility</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Accounting.ViewModels\Accounting.ViewModels.csproj">
+      <Project>{88ec45b3-0dcc-479b-88e6-e42c3b1d973f}</Project>
+      <Name>Accounting.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\بدون بکگراند.png" />

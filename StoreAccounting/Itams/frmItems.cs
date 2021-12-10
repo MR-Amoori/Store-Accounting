@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ValidationComponents;
+using Accounting.ViewModels.Category;
+using Accounting.DataLayer.Context;
 
 namespace StoreAccounting.Itams
 {
@@ -29,6 +31,12 @@ namespace StoreAccounting.Itams
             {
 
             }
+        }
+
+        private void frmItems_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
