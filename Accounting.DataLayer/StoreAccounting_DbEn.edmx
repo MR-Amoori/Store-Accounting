@@ -24,39 +24,14 @@
           <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ItemIdView" Type="int" Nullable="false" />
           <Property Name="ItemName" Type="nvarchar" MaxLength="150" Nullable="false" />
-          <Property Name="ItemCategory" Type="int" Nullable="false" />
           <Property Name="ItemAmountKharid" Type="int" Nullable="false" />
           <Property Name="ItemAmountrosh" Type="int" Nullable="false" />
           <Property Name="ItemNumber" Type="int" Nullable="false" />
           <Property Name="ItemCaption" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="ItemCategoryType">
-          <Key>
-            <PropertyRef Name="ItemCategoryTypeId" />
-          </Key>
-          <Property Name="ItemCategoryTypeId" Type="int" Nullable="false" />
-          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
-        </EntityType>
-        <Association Name="FK_Item_TB_ItemCategoryType">
-          <End Role="ItemCategoryType" Type="Self.ItemCategoryType" Multiplicity="1" />
-          <End Role="Item_TB" Type="Self.Item_TB" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="ItemCategoryType">
-              <PropertyRef Name="ItemCategoryTypeId" />
-            </Principal>
-            <Dependent Role="Item_TB">
-              <PropertyRef Name="ItemId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="AccountingStore_DBModelStoreContainer">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Item_TB" EntityType="Self.Item_TB" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ItemCategoryType" EntityType="Self.ItemCategoryType" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Item_TB_ItemCategoryType" Association="Self.FK_Item_TB_ItemCategoryType">
-            <End Role="ItemCategoryType" EntitySet="ItemCategoryType" />
-            <End Role="Item_TB" EntitySet="Item_TB" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -77,11 +52,6 @@
         <EntityContainer Name="AccountingStore_DBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" />
           <EntitySet Name="Item_TB" EntityType="AccountingStore_DBModel.Item_TB" />
-          <EntitySet Name="ItemCategoryType" EntityType="AccountingStore_DBModel.ItemCategoryType" />
-          <AssociationSet Name="FK_Item_TB_ItemCategoryType" Association="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType">
-            <End Role="ItemCategoryType" EntitySet="ItemCategoryType" />
-            <End Role="Item_TB" EntitySet="Item_TB" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Item_TB">
           <Key>
@@ -90,33 +60,11 @@
           <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ItemIdView" Type="Int32" Nullable="false" />
           <Property Name="ItemName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
-          <Property Name="ItemCategory" Type="Int32" Nullable="false" />
           <Property Name="ItemAmountKharid" Type="Int32" Nullable="false" />
           <Property Name="ItemAmountrosh" Type="Int32" Nullable="false" />
           <Property Name="ItemNumber" Type="Int32" Nullable="false" />
           <Property Name="ItemCaption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="ItemCategoryType" Relationship="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType" FromRole="Item_TB" ToRole="ItemCategoryType" />
         </EntityType>
-        <EntityType Name="ItemCategoryType">
-          <Key>
-            <PropertyRef Name="ItemCategoryTypeId" />
-          </Key>
-          <Property Name="ItemCategoryTypeId" Type="Int32" Nullable="false" />
-          <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Item_TB" Relationship="AccountingStore_DBModel.FK_Item_TB_ItemCategoryType" FromRole="ItemCategoryType" ToRole="Item_TB" />
-        </EntityType>
-        <Association Name="FK_Item_TB_ItemCategoryType">
-          <End Type="AccountingStore_DBModel.ItemCategoryType" Role="ItemCategoryType" Multiplicity="1" />
-          <End Type="AccountingStore_DBModel.Item_TB" Role="Item_TB" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="ItemCategoryType">
-              <PropertyRef Name="ItemCategoryTypeId" />
-            </Principal>
-            <Dependent Role="Item_TB">
-              <PropertyRef Name="ItemId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -143,18 +91,9 @@
                 <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
                 <ScalarProperty Name="ItemAmountrosh" ColumnName="ItemAmountrosh" />
                 <ScalarProperty Name="ItemAmountKharid" ColumnName="ItemAmountKharid" />
-                <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
                 <ScalarProperty Name="ItemName" ColumnName="ItemName" />
                 <ScalarProperty Name="ItemIdView" ColumnName="ItemIdView" />
                 <ScalarProperty Name="ItemId" ColumnName="ItemId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ItemCategoryType">
-            <EntityTypeMapping TypeName="AccountingStore_DBModel.ItemCategoryType">
-              <MappingFragment StoreEntitySet="ItemCategoryType">
-                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
-                <ScalarProperty Name="ItemCategoryTypeId" ColumnName="ItemCategoryTypeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

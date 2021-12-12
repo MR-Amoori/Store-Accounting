@@ -47,10 +47,9 @@ namespace StoreAccounting.Customer
                         db.CustomerReoisitorry.UpdateCustomer(customer);
                         db.Save();
                     }
-                    
-                }
-                DialogResult = DialogResult.OK;
+                }     
             }
+            DialogResult = DialogResult.OK;
         }
 
         private void AddOrEditCustomer_Load(object sender, EventArgs e)

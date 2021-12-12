@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Accounting.ViewModels.Category;
 
 namespace Accounting.DataLayer.Repository
 {
-    internal interface IItemRepository
+    public interface IItemRepository
     {
-        List<CategoriViewModel> GetNameAndIdCategory();
-        List<ItemCategoryType> itemCategoryType();
+        Item_TB GetItemById (int Id);
+        bool DeleteItem(int Id);
+        bool DeleteItem(Item_TB item);
     }
 }

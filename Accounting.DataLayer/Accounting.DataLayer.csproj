@@ -54,9 +54,6 @@
     <Compile Include="Customer_TB.cs">
       <DependentUpon>StoreAccounting_DbEn.tt</DependentUpon>
     </Compile>
-    <Compile Include="ItemCategoryType.cs">
-      <DependentUpon>StoreAccounting_DbEn.tt</DependentUpon>
-    </Compile>
     <Compile Include="Item_TB.cs">
       <DependentUpon>StoreAccounting_DbEn.tt</DependentUpon>
     </Compile>

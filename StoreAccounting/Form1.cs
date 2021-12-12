@@ -59,7 +59,7 @@ namespace StoreAccounting
             }
         }
 
-        void BindGridCustomer()
+        void BindGridCustomer() //واکشی اطلاعات جدول اشخاص
         {
             dgvCustomers.AutoGenerateColumns = false;
             using (UnitOfWork db = new UnitOfWork())
@@ -67,6 +67,21 @@ namespace StoreAccounting
                 dgvCustomers.DataSource = db.CustomerReoisitorry.GetAllCustomers();
                 db.Dispose();
             }
+        }
+
+        void BindGridItem() //واکشی اطلاعات جدول کالا ها
+        {
+            dgvItems.AutoGenerateColumns = false;
+            using (UnitOfWork db=new UnitOfWork())
+            {
+                dgvItems.DataSource = db.GenericRepositoryItem.Get();
+                db.Dispose();
+            }
+        }
+
+        void DisposMnItem() //بهینه کردن جدول کالا ها
+        {
+            dgvItems.DataSource = null;
         }
 
         private void btnEditCustomer_Click(object sender, EventArgs e)
@@ -117,52 +132,49 @@ namespace StoreAccounting
 
         private void mnHome_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer(); // استفاده از متد برای بهینه کردن منابع سیستم
+            DisposMn(); // استفاده از متد برای بهینه کردن منابع سیستم
         }
 
-        void DisposMnCustomer() // برای خالی کردن دیتا گرید ویو منوی اشخاص که منابع سیستم کمتر استفاده بشه
+        void DisposMn() // برای خالی کردن دیتا گرید ویو منوی اشخاص که منابع سیستم کمتر استفاده بشه
         {
             dgvCustomers.DataSource = null;
+            dgvItems.DataSource = null;
         }
 
         private void mnReports_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void mnItems_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
-            using (UnitOfWork db = new UnitOfWork())
-            {
-                dgvItems.AutoGenerateColumns = false;
-                dgvItems.DataSource = db.GenericRepositoryItem.Get();
-            }
+            DisposMn();
+            BindGridItem();
         }
 
         private void mnServicesSoft_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void sideNavItem3_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void mnNewAccounting_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void sideNavItem2_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void mnAbout_Click(object sender, EventArgs e)
         {
-            DisposMnCustomer();
+            DisposMn();
         }
 
         private void txtExperessSearch_Click(object sender, EventArgs e)
@@ -191,7 +203,38 @@ namespace StoreAccounting
             Itams.frmItems frmItem = new Itams.frmItems();
             if (frmItem.ShowDialog() == DialogResult.OK)
             {
+                BindGridItem();
+            }
+        }
 
+        private void btnRefreshItem_Click(object sender, EventArgs e)
+        {
+            BindGridItem();
+        }
+
+        private void btnEditItem_Click(object sender, EventArgs e)
+        {
+            Itams.frmItems frmitem = new Itams.frmItems();
+            frmitem.Id = (int)dgvItems.CurrentRow.Cells[0].Value;
+            if (frmitem.ShowDialog()==DialogResult.OK)
+            {
+                BindGridItem();
+            }
+        }
+
+        private void btnDeleteItem_Click(object sender, EventArgs e)
+        {
+            int id = (int)dgvItems.CurrentRow.Cells[0].Value;
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                var item = db.ItemRepository.GetItemById(id);
+                string Name = item.ItemName;
+                if (RtlMessageBox.Show($"آیا از حذف {Name} مطمئن هستید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    db.ItemRepository.DeleteItem(item.ItemId);
+                    db.Save();
+                    BindGridItem();
+                }
             }
         }
     }

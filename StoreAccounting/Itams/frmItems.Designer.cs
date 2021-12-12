@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItems));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,9 +42,6 @@
             this.txtAmountKharidItem = new System.Windows.Forms.NumericUpDown();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.requiredFieldValidator1 = new ValidationComponents.RequiredFieldValidator(this.components);
-            this.rangeValidator1 = new ValidationComponents.RangeValidator(this.components);
-            this.requiredFieldValidator2 = new ValidationComponents.RequiredFieldValidator(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.txtIdViewIdtem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumberItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmountFroshItem)).BeginInit();
@@ -170,30 +165,6 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // requiredFieldValidator1
-            // 
-            this.requiredFieldValidator1.CancelFocusChangeWhenInvalid = false;
-            this.requiredFieldValidator1.ControlToValidate = this.txtNameItem;
-            this.requiredFieldValidator1.ErrorMessage = "لطفا نام کالا را وارد کنید";
-            this.requiredFieldValidator1.Icon = ((System.Drawing.Icon)(resources.GetObject("requiredFieldValidator1.Icon")));
-            // 
-            // rangeValidator1
-            // 
-            this.rangeValidator1.CancelFocusChangeWhenInvalid = false;
-            this.rangeValidator1.ControlToValidate = this.txtIdViewIdtem;
-            this.rangeValidator1.ErrorMessage = "لطفا کد کالا را وارد کنید";
-            this.rangeValidator1.Icon = ((System.Drawing.Icon)(resources.GetObject("rangeValidator1.Icon")));
-            this.rangeValidator1.MaximumValue = "99999999999";
-            this.rangeValidator1.MinimumValue = "1";
-            this.rangeValidator1.Type = ValidationComponents.ValidationDataType.Integer;
-            // 
-            // requiredFieldValidator2
-            // 
-            this.requiredFieldValidator2.CancelFocusChangeWhenInvalid = false;
-            this.requiredFieldValidator2.ControlToValidate = null;
-            this.requiredFieldValidator2.ErrorMessage = "لطفا دسته بندی کالا را وارد کنید";
-            this.requiredFieldValidator2.Icon = ((System.Drawing.Icon)(resources.GetObject("requiredFieldValidator2.Icon")));
-            // 
             // frmItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,8 +217,5 @@
         private System.Windows.Forms.NumericUpDown txtAmountKharidItem;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
-        private ValidationComponents.RequiredFieldValidator requiredFieldValidator1;
-        private ValidationComponents.RangeValidator rangeValidator1;
-        private ValidationComponents.RequiredFieldValidator requiredFieldValidator2;
     }
 }

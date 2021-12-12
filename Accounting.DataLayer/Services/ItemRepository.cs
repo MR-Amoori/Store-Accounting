@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,26 +9,44 @@ using Accounting.ViewModels.Category;
 
 namespace Accounting.DataLayer.Services
 {
-    public class ItemRepository : IItemRepository
+    public class ItemRepository  : IItemRepository
     {
         public AccountingStore_DBEntities db;
         public ItemRepository(AccountingStore_DBEntities context)
         {
             db = context;
         }
-        public List<CategoriViewModel> GetNameAndIdCategory()
+
+        public bool DeleteItem(int Id)
         {
-            return db.Item_TB.Select(p => new CategoriViewModel()
+            try
             {
-                ItemId = p.ItemId,
-                ItemName = p.ItemCategory.ToString()
+                var item = GetItemById(Id);
+                DeleteItem(item);
+                return true;
             }
-                 ).ToList();
+            catch
+            {
+                return false;
+            }
         }
 
-        public List<ItemCategoryType> itemCategoryType()
+        public bool DeleteItem(Item_TB item)
+        {          
+                try
+                {
+                    db.Entry(item).State = EntityState.Deleted;
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+        }
+
+        public Item_TB GetItemById(int Id)
         {
-            return db.ItemCategoryType.ToList();
+            return db.Item_TB.Find(Id);
         }
     }
 }

@@ -29,22 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData4 = new DevComponents.DotNetBar.Controls.ClockStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData25 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData26 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData27 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData10 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData28 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData29 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData11 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData30 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData12 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData31 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData32 = new DevComponents.DotNetBar.Controls.ColorData();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData1 = new DevComponents.DotNetBar.Controls.ClockStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData1 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData2 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData3 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData1 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData4 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData5 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData2 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData6 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData3 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData7 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData8 = new DevComponents.DotNetBar.Controls.ColorData();
             this.sideNav1 = new DevComponents.DotNetBar.Controls.SideNav();
             this.sideNavPanel4 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemIdView = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemAmountKharid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemAmountrosh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnNewItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -115,14 +122,6 @@
             this.sideNavItem2 = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.mnAbout = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemIdView = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemAmountKharid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemAmountrosh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sideNav1.SuspendLayout();
             this.sideNavPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
@@ -202,7 +201,6 @@
             this.ItemId,
             this.ItemName,
             this.ItemIdView,
-            this.ItemCategory,
             this.ItemAmountKharid,
             this.ItemAmountrosh,
             this.ItemNumber,
@@ -214,6 +212,67 @@
             this.dgvItems.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgvItems.Size = new System.Drawing.Size(752, 467);
             this.dgvItems.TabIndex = 2;
+            // 
+            // ItemId
+            // 
+            this.ItemId.DataPropertyName = "ItemId";
+            this.ItemId.HeaderText = "ItemId";
+            this.ItemId.Name = "ItemId";
+            this.ItemId.ReadOnly = true;
+            this.ItemId.Visible = false;
+            // 
+            // ItemName
+            // 
+            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "نام کالا";
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 63;
+            // 
+            // ItemIdView
+            // 
+            this.ItemIdView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemIdView.DataPropertyName = "ItemIdView";
+            this.ItemIdView.HeaderText = "کد کالا";
+            this.ItemIdView.Name = "ItemIdView";
+            this.ItemIdView.ReadOnly = true;
+            this.ItemIdView.Width = 61;
+            // 
+            // ItemAmountKharid
+            // 
+            this.ItemAmountKharid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemAmountKharid.DataPropertyName = "ItemAmountKharid";
+            this.ItemAmountKharid.HeaderText = "خرید";
+            this.ItemAmountKharid.Name = "ItemAmountKharid";
+            this.ItemAmountKharid.ReadOnly = true;
+            this.ItemAmountKharid.Width = 53;
+            // 
+            // ItemAmountrosh
+            // 
+            this.ItemAmountrosh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemAmountrosh.DataPropertyName = "ItemAmountrosh";
+            this.ItemAmountrosh.HeaderText = "فروش";
+            this.ItemAmountrosh.Name = "ItemAmountrosh";
+            this.ItemAmountrosh.ReadOnly = true;
+            this.ItemAmountrosh.Width = 60;
+            // 
+            // ItemNumber
+            // 
+            this.ItemNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemNumber.DataPropertyName = "ItemNumber";
+            this.ItemNumber.HeaderText = "تعداد";
+            this.ItemNumber.Name = "ItemNumber";
+            this.ItemNumber.ReadOnly = true;
+            this.ItemNumber.Width = 55;
+            // 
+            // ItemCaption
+            // 
+            this.ItemCaption.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ItemCaption.DataPropertyName = "ItemCaption";
+            this.ItemCaption.HeaderText = "توضیحات";
+            this.ItemCaption.Name = "ItemCaption";
+            this.ItemCaption.ReadOnly = true;
             // 
             // toolStrip2
             // 
@@ -264,6 +323,7 @@
             this.btnEditItem.Text = "ویرایش کالا";
             this.btnEditItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnEditItem.ToolTipText = "ویرایش شخص";
+            this.btnEditItem.Click += new System.EventHandler(this.btnEditItem_Click);
             // 
             // toolStripSeparator6
             // 
@@ -279,6 +339,7 @@
             this.btnDeleteItem.Size = new System.Drawing.Size(55, 59);
             this.btnDeleteItem.Text = "حذف کالا";
             this.btnDeleteItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
             // 
             // toolStripSeparator7
             // 
@@ -295,6 +356,7 @@
             this.btnRefreshItem.Text = "همگام سازی";
             this.btnRefreshItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnRefreshItem.ToolTipText = "همگام سازی لیست";
+            this.btnRefreshItem.Click += new System.EventHandler(this.btnRefreshItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -344,14 +406,14 @@
             this.Email,
             this.Address,
             this.Reference});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvCustomers.Location = new System.Drawing.Point(0, 62);
@@ -745,82 +807,82 @@
             // 
             this.AnalogClock.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.AnalogClock.ClockStyle = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            colorData25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData25.BrushAngle = 90F;
-            colorData25.BrushSBSScale = 1F;
-            colorData25.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData25.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            colorData25.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData4.BezelColor = colorData25;
-            colorData26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData26.BorderWidth = 0.01F;
-            colorData26.BrushSBSScale = 1F;
-            colorData26.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            colorData26.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            clockStyleData4.CapColor = colorData26;
-            clockStyleData4.CapSize = 0.1F;
-            colorData27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData27.BrushAngle = 90F;
-            colorData27.BrushSBSScale = 1F;
-            colorData27.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData27.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            colorData27.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            clockStyleData4.FaceColor = colorData27;
-            clockStyleData4.GlassAngle = 0;
-            colorData28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData28.BorderWidth = 0.01F;
-            colorData28.BrushAngle = 90F;
-            colorData28.BrushSBSScale = 1F;
-            colorData28.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData28.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData28.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData10.HandColor = colorData28;
-            clockHandStyleData10.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData10.Length = 0.45F;
-            clockHandStyleData10.Width = 0.175F;
-            clockStyleData4.HourHandStyle = clockHandStyleData10;
-            colorData29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData29.BorderWidth = 0.01F;
-            colorData29.BrushSBSScale = 1F;
-            colorData29.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData29.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData4.LargeTickColor = colorData29;
-            clockStyleData4.LargeTickWidth = 0.01F;
-            colorData30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData30.BorderWidth = 0.01F;
-            colorData30.BrushAngle = 90F;
-            colorData30.BrushSBSScale = 1F;
-            colorData30.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData30.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData30.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData11.HandColor = colorData30;
-            clockHandStyleData11.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData11.Length = 0.75F;
-            clockHandStyleData11.Width = 0.175F;
-            clockStyleData4.MinuteHandStyle = clockHandStyleData11;
-            clockStyleData4.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData4.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            clockHandStyleData12.DrawOverCap = true;
-            colorData31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData31.BorderWidth = 0.01F;
-            colorData31.BrushSBSScale = 1F;
-            colorData31.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData31.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockHandStyleData12.HandColor = colorData31;
-            clockHandStyleData12.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
-            clockHandStyleData12.Length = 0.9F;
-            clockHandStyleData12.Width = 0.01F;
-            clockStyleData4.SecondHandStyle = clockHandStyleData12;
-            colorData32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData32.BorderWidth = 0.01F;
-            colorData32.BrushSBSScale = 1F;
-            colorData32.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData32.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData4.SmallTickColor = colorData32;
-            clockStyleData4.SmallTickLength = 0.01F;
-            clockStyleData4.SmallTickWidth = 0.01F;
-            clockStyleData4.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            this.AnalogClock.ClockStyleData = clockStyleData4;
+            colorData1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData1.BrushAngle = 90F;
+            colorData1.BrushSBSScale = 1F;
+            colorData1.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            colorData1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData1.BezelColor = colorData1;
+            colorData2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData2.BorderWidth = 0.01F;
+            colorData2.BrushSBSScale = 1F;
+            colorData2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            colorData2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            clockStyleData1.CapColor = colorData2;
+            clockStyleData1.CapSize = 0.1F;
+            colorData3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData3.BrushAngle = 90F;
+            colorData3.BrushSBSScale = 1F;
+            colorData3.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            colorData3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            clockStyleData1.FaceColor = colorData3;
+            clockStyleData1.GlassAngle = 0;
+            colorData4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData4.BorderWidth = 0.01F;
+            colorData4.BrushAngle = 90F;
+            colorData4.BrushSBSScale = 1F;
+            colorData4.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData1.HandColor = colorData4;
+            clockHandStyleData1.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData1.Length = 0.45F;
+            clockHandStyleData1.Width = 0.175F;
+            clockStyleData1.HourHandStyle = clockHandStyleData1;
+            colorData5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData5.BorderWidth = 0.01F;
+            colorData5.BrushSBSScale = 1F;
+            colorData5.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData5.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData1.LargeTickColor = colorData5;
+            clockStyleData1.LargeTickWidth = 0.01F;
+            colorData6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData6.BorderWidth = 0.01F;
+            colorData6.BrushAngle = 90F;
+            colorData6.BrushSBSScale = 1F;
+            colorData6.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData6.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData6.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData2.HandColor = colorData6;
+            clockHandStyleData2.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData2.Length = 0.75F;
+            clockHandStyleData2.Width = 0.175F;
+            clockStyleData1.MinuteHandStyle = clockHandStyleData2;
+            clockStyleData1.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData1.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            clockHandStyleData3.DrawOverCap = true;
+            colorData7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData7.BorderWidth = 0.01F;
+            colorData7.BrushSBSScale = 1F;
+            colorData7.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData7.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockHandStyleData3.HandColor = colorData7;
+            clockHandStyleData3.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
+            clockHandStyleData3.Length = 0.9F;
+            clockHandStyleData3.Width = 0.01F;
+            clockStyleData1.SecondHandStyle = clockHandStyleData3;
+            colorData8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData8.BorderWidth = 0.01F;
+            colorData8.BrushSBSScale = 1F;
+            colorData8.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData8.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData1.SmallTickColor = colorData8;
+            clockStyleData1.SmallTickLength = 0.01F;
+            clockStyleData1.SmallTickWidth = 0.01F;
+            clockStyleData1.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
+            this.AnalogClock.ClockStyleData = clockStyleData1;
             this.AnalogClock.Location = new System.Drawing.Point(24, 30);
             this.AnalogClock.Name = "AnalogClock";
             this.AnalogClock.Size = new System.Drawing.Size(162, 162);
@@ -999,76 +1061,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // ItemId
-            // 
-            this.ItemId.DataPropertyName = "ItemId";
-            this.ItemId.HeaderText = "ItemId";
-            this.ItemId.Name = "ItemId";
-            this.ItemId.ReadOnly = true;
-            this.ItemId.Visible = false;
-            // 
-            // ItemName
-            // 
-            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemName.DataPropertyName = "ItemName";
-            this.ItemName.HeaderText = "نام کالا";
-            this.ItemName.Name = "ItemName";
-            this.ItemName.ReadOnly = true;
-            this.ItemName.Width = 63;
-            // 
-            // ItemIdView
-            // 
-            this.ItemIdView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemIdView.DataPropertyName = "ItemIdView";
-            this.ItemIdView.HeaderText = "کد کالا";
-            this.ItemIdView.Name = "ItemIdView";
-            this.ItemIdView.ReadOnly = true;
-            this.ItemIdView.Width = 61;
-            // 
-            // ItemCategory
-            // 
-            this.ItemCategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemCategory.DataPropertyName = "ItemCategory";
-            this.ItemCategory.HeaderText = "دسته بندی";
-            this.ItemCategory.Name = "ItemCategory";
-            this.ItemCategory.ReadOnly = true;
-            this.ItemCategory.Width = 84;
-            // 
-            // ItemAmountKharid
-            // 
-            this.ItemAmountKharid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemAmountKharid.DataPropertyName = "ItemAmountKharid";
-            this.ItemAmountKharid.HeaderText = "خرید";
-            this.ItemAmountKharid.Name = "ItemAmountKharid";
-            this.ItemAmountKharid.ReadOnly = true;
-            this.ItemAmountKharid.Width = 53;
-            // 
-            // ItemAmountrosh
-            // 
-            this.ItemAmountrosh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemAmountrosh.DataPropertyName = "ItemAmountrosh";
-            this.ItemAmountrosh.HeaderText = "فروش";
-            this.ItemAmountrosh.Name = "ItemAmountrosh";
-            this.ItemAmountrosh.ReadOnly = true;
-            this.ItemAmountrosh.Width = 60;
-            // 
-            // ItemNumber
-            // 
-            this.ItemNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemNumber.DataPropertyName = "ItemNumber";
-            this.ItemNumber.HeaderText = "تعداد";
-            this.ItemNumber.Name = "ItemNumber";
-            this.ItemNumber.ReadOnly = true;
-            this.ItemNumber.Width = 55;
-            // 
-            // ItemCaption
-            // 
-            this.ItemCaption.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ItemCaption.DataPropertyName = "ItemCaption";
-            this.ItemCaption.HeaderText = "توضیحات";
-            this.ItemCaption.Name = "ItemCaption";
-            this.ItemCaption.ReadOnly = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1192,7 +1184,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemIdView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmountKharid;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmountrosh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemNumber;
