@@ -29,22 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData2 = new DevComponents.DotNetBar.Controls.ClockStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData9 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData10 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData11 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData4 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData12 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData13 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData5 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData14 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData6 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
-            DevComponents.DotNetBar.Controls.ColorData colorData15 = new DevComponents.DotNetBar.Controls.ColorData();
-            DevComponents.DotNetBar.Controls.ColorData colorData16 = new DevComponents.DotNetBar.Controls.ColorData();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData4 = new DevComponents.DotNetBar.Controls.ClockStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData25 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData26 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData27 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData10 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData28 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData29 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData11 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData30 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ClockHandStyleData clockHandStyleData12 = new DevComponents.DotNetBar.Controls.ClockHandStyleData();
+            DevComponents.DotNetBar.Controls.ColorData colorData31 = new DevComponents.DotNetBar.Controls.ColorData();
+            DevComponents.DotNetBar.Controls.ColorData colorData32 = new DevComponents.DotNetBar.Controls.ColorData();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sideNav1 = new DevComponents.DotNetBar.Controls.SideNav();
+            this.sideNavPanel5 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.dgvSoftService = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.SoftServiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.btnNewSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnEditSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDeleteSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.txtFillterSoftService = new System.Windows.Forms.ToolStripTextBox();
             this.sideNavPanel4 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.dgvItems = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,36 +73,24 @@
             this.ItemAmountrosh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.btnNewItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnEditItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnRefreshItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.txtFilterItem = new System.Windows.Forms.ToolStripTextBox();
-            this.sideNavPanel5 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel9 = new DevComponents.DotNetBar.Controls.SideNavPanel();
-            this.sideNavPanel3 = new DevComponents.DotNetBar.Controls.SideNavPanel();
-            this.dgvCustomers = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Namee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Family = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.txtFilterCustomer = new System.Windows.Forms.ToolStripTextBox();
-            this.sideNavPanel2 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel1 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnSearchEmalls = new System.Windows.Forms.Button();
             this.btnSerachMobile = new System.Windows.Forms.Button();
             this.txtExperessSearch = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.calculator1 = new DevComponents.Editors.Calculator();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -100,6 +105,27 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.AnalogClock = new DevComponents.DotNetBar.Controls.AnalogClockControl();
             this.txtDateTime = new System.Windows.Forms.Label();
+            this.sideNavPanel3 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.dgvCustomers = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Namee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Family = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnNewCustomer = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnEditCustomer = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDeleteCustomer = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnRefreshCustomer = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.txtFilterCustomer = new System.Windows.Forms.ToolStripTextBox();
+            this.sideNavPanel2 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel8 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel7 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel6 = new DevComponents.DotNetBar.Controls.SideNavPanel();
@@ -115,42 +141,17 @@
             this.sideNavItem2 = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.mnAbout = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.txtFillterSoftService = new System.Windows.Forms.ToolStripTextBox();
-            this.dgvSoftService = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.SoftServiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoftServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoftServiceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoftServiceCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnNewSoftService = new System.Windows.Forms.ToolStripButton();
-            this.btnEditSoftService = new System.Windows.Forms.ToolStripButton();
-            this.btnDeleteSoftService = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.btnNewItem = new System.Windows.Forms.ToolStripButton();
-            this.btnEditItem = new System.Windows.Forms.ToolStripButton();
-            this.btnDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.btnRefreshItem = new System.Windows.Forms.ToolStripButton();
-            this.btnNewCustomer = new System.Windows.Forms.ToolStripButton();
-            this.btnEditCustomer = new System.Windows.Forms.ToolStripButton();
-            this.btnDeleteCustomer = new System.Windows.Forms.ToolStripButton();
-            this.btnRefreshCustomer = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sideNav1.SuspendLayout();
+            this.sideNavPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).BeginInit();
+            this.toolStrip3.SuspendLayout();
             this.sideNavPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.toolStrip2.SuspendLayout();
-            this.sideNavPanel5.SuspendLayout();
-            this.sideNavPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.sideNavPanel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -158,20 +159,19 @@
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.toolStrip3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sideNavPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideNav1
             // 
             this.sideNav1.Controls.Add(this.sideNavPanel5);
-            this.sideNav1.Controls.Add(this.sideNavPanel4);
             this.sideNav1.Controls.Add(this.sideNavPanel9);
-            this.sideNav1.Controls.Add(this.sideNavPanel1);
+            this.sideNav1.Controls.Add(this.sideNavPanel4);
             this.sideNav1.Controls.Add(this.sideNavPanel3);
             this.sideNav1.Controls.Add(this.sideNavPanel2);
+            this.sideNav1.Controls.Add(this.sideNavPanel1);
             this.sideNav1.Controls.Add(this.sideNavPanel8);
             this.sideNav1.Controls.Add(this.sideNavPanel7);
             this.sideNav1.Controls.Add(this.sideNavPanel6);
@@ -198,6 +198,185 @@
             this.sideNav1.Size = new System.Drawing.Size(895, 561);
             this.sideNav1.TabIndex = 0;
             this.sideNav1.Text = "درباره ما";
+            // 
+            // sideNavPanel5
+            // 
+            this.sideNavPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel5.Controls.Add(this.dgvSoftService);
+            this.sideNavPanel5.Controls.Add(this.toolStrip3);
+            this.sideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel5.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel5.Name = "sideNavPanel5";
+            this.sideNavPanel5.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel5.TabIndex = 22;
+            // 
+            // dgvSoftService
+            // 
+            this.dgvSoftService.AllowUserToAddRows = false;
+            this.dgvSoftService.AllowUserToDeleteRows = false;
+            this.dgvSoftService.AllowUserToResizeColumns = false;
+            this.dgvSoftService.AllowUserToResizeRows = false;
+            this.dgvSoftService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSoftService.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvSoftService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSoftService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SoftServiceId,
+            this.SoftServiceName,
+            this.SoftServiceAmount,
+            this.SoftServiceCaption});
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSoftService.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvSoftService.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSoftService.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvSoftService.Location = new System.Drawing.Point(0, 62);
+            this.dgvSoftService.Name = "dgvSoftService";
+            this.dgvSoftService.ReadOnly = true;
+            this.dgvSoftService.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvSoftService.Size = new System.Drawing.Size(752, 467);
+            this.dgvSoftService.TabIndex = 3;
+            // 
+            // SoftServiceId
+            // 
+            this.SoftServiceId.DataPropertyName = "SoftServiceId";
+            this.SoftServiceId.HeaderText = "SoftServiceId";
+            this.SoftServiceId.Name = "SoftServiceId";
+            this.SoftServiceId.ReadOnly = true;
+            this.SoftServiceId.Visible = false;
+            // 
+            // SoftServiceName
+            // 
+            this.SoftServiceName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SoftServiceName.DataPropertyName = "SoftServiceName";
+            this.SoftServiceName.HeaderText = "نام";
+            this.SoftServiceName.Name = "SoftServiceName";
+            this.SoftServiceName.ReadOnly = true;
+            this.SoftServiceName.Width = 45;
+            // 
+            // SoftServiceAmount
+            // 
+            this.SoftServiceAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SoftServiceAmount.DataPropertyName = "SoftServiceAmount";
+            this.SoftServiceAmount.HeaderText = "قیمت";
+            this.SoftServiceAmount.Name = "SoftServiceAmount";
+            this.SoftServiceAmount.ReadOnly = true;
+            this.SoftServiceAmount.Width = 58;
+            // 
+            // SoftServiceCaption
+            // 
+            this.SoftServiceCaption.DataPropertyName = "SoftServiceCaption";
+            this.SoftServiceCaption.HeaderText = "توضیحات";
+            this.SoftServiceCaption.Name = "SoftServiceCaption";
+            this.SoftServiceCaption.ReadOnly = true;
+            // 
+            // toolStrip3
+            // 
+            this.toolStrip3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toolStrip3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNewSoftService,
+            this.toolStripSeparator9,
+            this.btnEditSoftService,
+            this.toolStripSeparator10,
+            this.btnDeleteSoftService,
+            this.toolStripSeparator11,
+            this.toolStripButton4,
+            this.toolStripSeparator12,
+            this.toolStripLabel3,
+            this.txtFillterSoftService});
+            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip3.Size = new System.Drawing.Size(752, 62);
+            this.toolStrip3.TabIndex = 2;
+            this.toolStrip3.Text = "toolStrip3";
+            // 
+            // btnNewSoftService
+            // 
+            this.btnNewSoftService.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
+            this.btnNewSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnNewSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNewSoftService.Name = "btnNewSoftService";
+            this.btnNewSoftService.Size = new System.Drawing.Size(81, 59);
+            this.btnNewSoftService.Text = "افزودن خدمات";
+            this.btnNewSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNewSoftService.ToolTipText = "افزودن خدمات نرم افزاری جدید";
+            this.btnNewSoftService.Click += new System.EventHandler(this.btnNewSoftService_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnEditSoftService
+            // 
+            this.btnEditSoftService.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
+            this.btnEditSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnEditSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditSoftService.Name = "btnEditSoftService";
+            this.btnEditSoftService.Size = new System.Drawing.Size(84, 59);
+            this.btnEditSoftService.Text = "ویرایش خدمات";
+            this.btnEditSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditSoftService.ToolTipText = "ویرایش خدمات نرم افزاری";
+            this.btnEditSoftService.Click += new System.EventHandler(this.btnEditSoftService_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnDeleteSoftService
+            // 
+            this.btnDeleteSoftService.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
+            this.btnDeleteSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnDeleteSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDeleteSoftService.Name = "btnDeleteSoftService";
+            this.btnDeleteSoftService.Size = new System.Drawing.Size(73, 59);
+            this.btnDeleteSoftService.Text = "حذف خدمات";
+            this.btnDeleteSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDeleteSoftService.Click += new System.EventHandler(this.btnDeleteSoftService_Click);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(71, 59);
+            this.toolStripButton4.Text = "همگام سازی";
+            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton4.ToolTipText = "همگام سازی لیست";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(47, 59);
+            this.toolStripLabel3.Text = "جستجو: ";
+            // 
+            // txtFillterSoftService
+            // 
+            this.txtFillterSoftService.BackColor = System.Drawing.SystemColors.Info;
+            this.txtFillterSoftService.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFillterSoftService.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFillterSoftService.Name = "txtFillterSoftService";
+            this.txtFillterSoftService.Size = new System.Drawing.Size(100, 62);
+            this.txtFillterSoftService.TextChanged += new System.EventHandler(this.txtFillterSoftService_TextChanged);
             // 
             // sideNavPanel4
             // 
@@ -229,14 +408,14 @@
             this.ItemAmountKharid,
             this.ItemAmountrosh,
             this.ItemCaption});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvItems.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItems.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvItems.Location = new System.Drawing.Point(0, 62);
@@ -338,20 +517,67 @@
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
+            // btnNewItem
+            // 
+            this.btnNewItem.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
+            this.btnNewItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnNewItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNewItem.Name = "btnNewItem";
+            this.btnNewItem.Size = new System.Drawing.Size(63, 59);
+            this.btnNewItem.Text = "افزودن کالا";
+            this.btnNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNewItem.ToolTipText = "افزودن کالای جدید";
+            this.btnNewItem.Click += new System.EventHandler(this.btnNewItem_Click);
+            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnEditItem
+            // 
+            this.btnEditItem.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
+            this.btnEditItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnEditItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditItem.Name = "btnEditItem";
+            this.btnEditItem.Size = new System.Drawing.Size(66, 59);
+            this.btnEditItem.Text = "ویرایش کالا";
+            this.btnEditItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditItem.ToolTipText = "ویرایش کالا";
+            this.btnEditItem.Click += new System.EventHandler(this.btnEditItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 62);
             // 
+            // btnDeleteItem
+            // 
+            this.btnDeleteItem.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
+            this.btnDeleteItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnDeleteItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDeleteItem.Name = "btnDeleteItem";
+            this.btnDeleteItem.Size = new System.Drawing.Size(55, 59);
+            this.btnDeleteItem.Text = "حذف کالا";
+            this.btnDeleteItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
+            // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnRefreshItem
+            // 
+            this.btnRefreshItem.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
+            this.btnRefreshItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnRefreshItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefreshItem.Name = "btnRefreshItem";
+            this.btnRefreshItem.Size = new System.Drawing.Size(71, 59);
+            this.btnRefreshItem.Text = "همگام سازی";
+            this.btnRefreshItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnRefreshItem.ToolTipText = "همگام سازی لیست";
+            this.btnRefreshItem.Click += new System.EventHandler(this.btnRefreshItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -373,17 +599,6 @@
             this.txtFilterItem.Size = new System.Drawing.Size(100, 62);
             this.txtFilterItem.TextChanged += new System.EventHandler(this.txtFilterItem_TextChanged);
             // 
-            // sideNavPanel5
-            // 
-            this.sideNavPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel5.Controls.Add(this.dgvSoftService);
-            this.sideNavPanel5.Controls.Add(this.toolStrip3);
-            this.sideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel5.Location = new System.Drawing.Point(142, 31);
-            this.sideNavPanel5.Name = "sideNavPanel5";
-            this.sideNavPanel5.Size = new System.Drawing.Size(752, 529);
-            this.sideNavPanel5.TabIndex = 22;
-            // 
             // sideNavPanel9
             // 
             this.sideNavPanel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -393,169 +608,6 @@
             this.sideNavPanel9.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel9.TabIndex = 38;
             this.sideNavPanel9.Visible = false;
-            // 
-            // sideNavPanel3
-            // 
-            this.sideNavPanel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel3.Controls.Add(this.dgvCustomers);
-            this.sideNavPanel3.Controls.Add(this.toolStrip1);
-            this.sideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel3.Location = new System.Drawing.Point(1, 1);
-            this.sideNavPanel3.Name = "sideNavPanel3";
-            this.sideNavPanel3.Size = new System.Drawing.Size(893, 559);
-            this.sideNavPanel3.TabIndex = 14;
-            this.sideNavPanel3.Visible = false;
-            // 
-            // dgvCustomers
-            // 
-            this.dgvCustomers.AllowUserToAddRows = false;
-            this.dgvCustomers.AllowUserToDeleteRows = false;
-            this.dgvCustomers.AllowUserToResizeColumns = false;
-            this.dgvCustomers.AllowUserToResizeRows = false;
-            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCustomers.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CustomerID,
-            this.Namee,
-            this.Family,
-            this.NumberPhone,
-            this.Email,
-            this.Address,
-            this.Reference});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvCustomers.Location = new System.Drawing.Point(0, 62);
-            this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.ReadOnly = true;
-            this.dgvCustomers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgvCustomers.Size = new System.Drawing.Size(893, 497);
-            this.dgvCustomers.TabIndex = 1;
-            // 
-            // CustomerID
-            // 
-            this.CustomerID.DataPropertyName = "CustomerID";
-            this.CustomerID.HeaderText = "CustomerID";
-            this.CustomerID.Name = "CustomerID";
-            this.CustomerID.ReadOnly = true;
-            this.CustomerID.Visible = false;
-            // 
-            // Namee
-            // 
-            this.Namee.DataPropertyName = "Name";
-            this.Namee.HeaderText = "نام";
-            this.Namee.Name = "Namee";
-            this.Namee.ReadOnly = true;
-            // 
-            // Family
-            // 
-            this.Family.DataPropertyName = "Family";
-            this.Family.HeaderText = "نام خانوادگی";
-            this.Family.Name = "Family";
-            this.Family.ReadOnly = true;
-            // 
-            // NumberPhone
-            // 
-            this.NumberPhone.DataPropertyName = "NumberPhone";
-            this.NumberPhone.HeaderText = "شماره تماس";
-            this.NumberPhone.Name = "NumberPhone";
-            this.NumberPhone.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "ایمیل";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // Address
-            // 
-            this.Address.DataPropertyName = "Address";
-            this.Address.HeaderText = "آدرس";
-            this.Address.Name = "Address";
-            this.Address.ReadOnly = true;
-            // 
-            // Reference
-            // 
-            this.Reference.DataPropertyName = "Reference";
-            this.Reference.HeaderText = "مراجعه";
-            this.Reference.Name = "Reference";
-            this.Reference.ReadOnly = true;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnNewCustomer,
-            this.toolStripSeparator1,
-            this.btnEditCustomer,
-            this.toolStripSeparator2,
-            this.btnDeleteCustomer,
-            this.toolStripSeparator3,
-            this.btnRefreshCustomer,
-            this.toolStripSeparator4,
-            this.toolStripLabel1,
-            this.txtFilterCustomer});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStrip1.Size = new System.Drawing.Size(893, 62);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(47, 59);
-            this.toolStripLabel1.Text = "جستجو: ";
-            // 
-            // txtFilterCustomer
-            // 
-            this.txtFilterCustomer.BackColor = System.Drawing.SystemColors.Info;
-            this.txtFilterCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFilterCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFilterCustomer.Name = "txtFilterCustomer";
-            this.txtFilterCustomer.Size = new System.Drawing.Size(100, 62);
-            this.txtFilterCustomer.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
-            // 
-            // sideNavPanel2
-            // 
-            this.sideNavPanel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel2.Location = new System.Drawing.Point(142, 31);
-            this.sideNavPanel2.Name = "sideNavPanel2";
-            this.sideNavPanel2.Size = new System.Drawing.Size(752, 529);
-            this.sideNavPanel2.TabIndex = 6;
-            this.sideNavPanel2.Visible = false;
             // 
             // sideNavPanel1
             // 
@@ -617,6 +669,28 @@
             this.txtExperessSearch.TabIndex = 1;
             this.txtExperessSearch.Text = "         سرچ سریع";
             this.txtExperessSearch.Click += new System.EventHandler(this.txtExperessSearch_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::StoreAccounting.Properties.Resources.پوستر_مغازه;
+            this.pictureBox2.Location = new System.Drawing.Point(253, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(147, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::StoreAccounting.Properties.Resources.LogoCoverLand;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox3
             // 
@@ -755,82 +829,82 @@
             // 
             this.AnalogClock.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.AnalogClock.ClockStyle = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            colorData9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData9.BrushAngle = 90F;
-            colorData9.BrushSBSScale = 1F;
-            colorData9.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData9.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            colorData9.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData2.BezelColor = colorData9;
-            colorData10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData10.BorderWidth = 0.01F;
-            colorData10.BrushSBSScale = 1F;
-            colorData10.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            colorData10.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            clockStyleData2.CapColor = colorData10;
-            clockStyleData2.CapSize = 0.1F;
-            colorData11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData11.BrushAngle = 90F;
-            colorData11.BrushSBSScale = 1F;
-            colorData11.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData11.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            colorData11.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            clockStyleData2.FaceColor = colorData11;
-            clockStyleData2.GlassAngle = 0;
-            colorData12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData12.BorderWidth = 0.01F;
-            colorData12.BrushAngle = 90F;
-            colorData12.BrushSBSScale = 1F;
-            colorData12.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData12.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData12.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData4.HandColor = colorData12;
-            clockHandStyleData4.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData4.Length = 0.45F;
-            clockHandStyleData4.Width = 0.175F;
-            clockStyleData2.HourHandStyle = clockHandStyleData4;
-            colorData13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData13.BorderWidth = 0.01F;
-            colorData13.BrushSBSScale = 1F;
-            colorData13.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData13.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData2.LargeTickColor = colorData13;
-            clockStyleData2.LargeTickWidth = 0.01F;
-            colorData14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData14.BorderWidth = 0.01F;
-            colorData14.BrushAngle = 90F;
-            colorData14.BrushSBSScale = 1F;
-            colorData14.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
-            colorData14.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData14.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            clockHandStyleData5.HandColor = colorData14;
-            clockHandStyleData5.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
-            clockHandStyleData5.Length = 0.75F;
-            clockHandStyleData5.Width = 0.175F;
-            clockStyleData2.MinuteHandStyle = clockHandStyleData5;
-            clockStyleData2.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData2.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            clockHandStyleData6.DrawOverCap = true;
-            colorData15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData15.BorderWidth = 0.01F;
-            colorData15.BrushSBSScale = 1F;
-            colorData15.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData15.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockHandStyleData6.HandColor = colorData15;
-            clockHandStyleData6.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
-            clockHandStyleData6.Length = 0.9F;
-            clockHandStyleData6.Width = 0.01F;
-            clockStyleData2.SecondHandStyle = clockHandStyleData6;
-            colorData16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData16.BorderWidth = 0.01F;
-            colorData16.BrushSBSScale = 1F;
-            colorData16.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            colorData16.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            clockStyleData2.SmallTickColor = colorData16;
-            clockStyleData2.SmallTickLength = 0.01F;
-            clockStyleData2.SmallTickWidth = 0.01F;
-            clockStyleData2.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
-            this.AnalogClock.ClockStyleData = clockStyleData2;
+            colorData25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData25.BrushAngle = 90F;
+            colorData25.BrushSBSScale = 1F;
+            colorData25.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData25.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            colorData25.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData4.BezelColor = colorData25;
+            colorData26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData26.BorderWidth = 0.01F;
+            colorData26.BrushSBSScale = 1F;
+            colorData26.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            colorData26.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            clockStyleData4.CapColor = colorData26;
+            clockStyleData4.CapSize = 0.1F;
+            colorData27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData27.BrushAngle = 90F;
+            colorData27.BrushSBSScale = 1F;
+            colorData27.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData27.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            colorData27.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            clockStyleData4.FaceColor = colorData27;
+            clockStyleData4.GlassAngle = 0;
+            colorData28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData28.BorderWidth = 0.01F;
+            colorData28.BrushAngle = 90F;
+            colorData28.BrushSBSScale = 1F;
+            colorData28.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData28.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData28.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData10.HandColor = colorData28;
+            clockHandStyleData10.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData10.Length = 0.45F;
+            clockHandStyleData10.Width = 0.175F;
+            clockStyleData4.HourHandStyle = clockHandStyleData10;
+            colorData29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData29.BorderWidth = 0.01F;
+            colorData29.BrushSBSScale = 1F;
+            colorData29.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData29.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData4.LargeTickColor = colorData29;
+            clockStyleData4.LargeTickWidth = 0.01F;
+            colorData30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData30.BorderWidth = 0.01F;
+            colorData30.BrushAngle = 90F;
+            colorData30.BrushSBSScale = 1F;
+            colorData30.BrushType = DevComponents.DotNetBar.Controls.eBrushTypes.Linear;
+            colorData30.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData30.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            clockHandStyleData11.HandColor = colorData30;
+            clockHandStyleData11.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style3;
+            clockHandStyleData11.Length = 0.75F;
+            clockHandStyleData11.Width = 0.175F;
+            clockStyleData4.MinuteHandStyle = clockHandStyleData11;
+            clockStyleData4.NumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData4.NumberFont = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            clockHandStyleData12.DrawOverCap = true;
+            colorData31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData31.BorderWidth = 0.01F;
+            colorData31.BrushSBSScale = 1F;
+            colorData31.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData31.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockHandStyleData12.HandColor = colorData31;
+            clockHandStyleData12.HandStyle = DevComponents.DotNetBar.Controls.eHandStyles.Style4;
+            clockHandStyleData12.Length = 0.9F;
+            clockHandStyleData12.Width = 0.01F;
+            clockStyleData4.SecondHandStyle = clockHandStyleData12;
+            colorData32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData32.BorderWidth = 0.01F;
+            colorData32.BrushSBSScale = 1F;
+            colorData32.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            colorData32.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            clockStyleData4.SmallTickColor = colorData32;
+            clockStyleData4.SmallTickLength = 0.01F;
+            clockStyleData4.SmallTickWidth = 0.01F;
+            clockStyleData4.Style = DevComponents.DotNetBar.Controls.eClockStyles.Custom;
+            this.AnalogClock.ClockStyleData = clockStyleData4;
             this.AnalogClock.Location = new System.Drawing.Point(24, 30);
             this.AnalogClock.Name = "AnalogClock";
             this.AnalogClock.Size = new System.Drawing.Size(162, 162);
@@ -849,6 +923,216 @@
             this.txtDateTime.Size = new System.Drawing.Size(55, 21);
             this.txtDateTime.TabIndex = 2;
             this.txtDateTime.Text = "*تاریخ*";
+            // 
+            // sideNavPanel3
+            // 
+            this.sideNavPanel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel3.Controls.Add(this.dgvCustomers);
+            this.sideNavPanel3.Controls.Add(this.toolStrip1);
+            this.sideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel3.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel3.Name = "sideNavPanel3";
+            this.sideNavPanel3.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel3.TabIndex = 14;
+            this.sideNavPanel3.Visible = false;
+            // 
+            // dgvCustomers
+            // 
+            this.dgvCustomers.AllowUserToAddRows = false;
+            this.dgvCustomers.AllowUserToDeleteRows = false;
+            this.dgvCustomers.AllowUserToResizeColumns = false;
+            this.dgvCustomers.AllowUserToResizeRows = false;
+            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCustomers.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CustomerID,
+            this.Namee,
+            this.Family,
+            this.NumberPhone,
+            this.Email,
+            this.Address,
+            this.Reference});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvCustomers.Location = new System.Drawing.Point(0, 62);
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.ReadOnly = true;
+            this.dgvCustomers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvCustomers.Size = new System.Drawing.Size(752, 467);
+            this.dgvCustomers.TabIndex = 1;
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.DataPropertyName = "CustomerID";
+            this.CustomerID.HeaderText = "CustomerID";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.ReadOnly = true;
+            this.CustomerID.Visible = false;
+            // 
+            // Namee
+            // 
+            this.Namee.DataPropertyName = "Name";
+            this.Namee.HeaderText = "نام";
+            this.Namee.Name = "Namee";
+            this.Namee.ReadOnly = true;
+            // 
+            // Family
+            // 
+            this.Family.DataPropertyName = "Family";
+            this.Family.HeaderText = "نام خانوادگی";
+            this.Family.Name = "Family";
+            this.Family.ReadOnly = true;
+            // 
+            // NumberPhone
+            // 
+            this.NumberPhone.DataPropertyName = "NumberPhone";
+            this.NumberPhone.HeaderText = "شماره تماس";
+            this.NumberPhone.Name = "NumberPhone";
+            this.NumberPhone.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "ایمیل";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Address
+            // 
+            this.Address.DataPropertyName = "Address";
+            this.Address.HeaderText = "آدرس";
+            this.Address.Name = "Address";
+            this.Address.ReadOnly = true;
+            // 
+            // Reference
+            // 
+            this.Reference.DataPropertyName = "Reference";
+            this.Reference.HeaderText = "مراجعه";
+            this.Reference.Name = "Reference";
+            this.Reference.ReadOnly = true;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNewCustomer,
+            this.toolStripSeparator1,
+            this.btnEditCustomer,
+            this.toolStripSeparator2,
+            this.btnDeleteCustomer,
+            this.toolStripSeparator3,
+            this.btnRefreshCustomer,
+            this.toolStripSeparator4,
+            this.toolStripLabel1,
+            this.txtFilterCustomer});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip1.Size = new System.Drawing.Size(752, 62);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnNewCustomer
+            // 
+            this.btnNewCustomer.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
+            this.btnNewCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnNewCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNewCustomer.Name = "btnNewCustomer";
+            this.btnNewCustomer.Size = new System.Drawing.Size(80, 59);
+            this.btnNewCustomer.Text = "افزودن شخص";
+            this.btnNewCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNewCustomer.ToolTipText = "افزودن شخص جدید";
+            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnEditCustomer
+            // 
+            this.btnEditCustomer.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
+            this.btnEditCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnEditCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(83, 59);
+            this.btnEditCustomer.Text = "ویرایش شخص";
+            this.btnEditCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditCustomer.ToolTipText = "ویرایش شخص";
+            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
+            this.btnDeleteCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnDeleteCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(72, 59);
+            this.btnDeleteCustomer.Text = "حذف شخص";
+            this.btnDeleteCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnRefreshCustomer
+            // 
+            this.btnRefreshCustomer.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
+            this.btnRefreshCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnRefreshCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefreshCustomer.Name = "btnRefreshCustomer";
+            this.btnRefreshCustomer.Size = new System.Drawing.Size(71, 59);
+            this.btnRefreshCustomer.Text = "همگام سازی";
+            this.btnRefreshCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnRefreshCustomer.ToolTipText = "همگام سازی لیست";
+            this.btnRefreshCustomer.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(47, 59);
+            this.toolStripLabel1.Text = "جستجو: ";
+            // 
+            // txtFilterCustomer
+            // 
+            this.txtFilterCustomer.BackColor = System.Drawing.SystemColors.Info;
+            this.txtFilterCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFilterCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFilterCustomer.Name = "txtFilterCustomer";
+            this.txtFilterCustomer.Size = new System.Drawing.Size(100, 62);
+            this.txtFilterCustomer.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
+            // 
+            // sideNavPanel2
+            // 
+            this.sideNavPanel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel2.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel2.Name = "sideNavPanel2";
+            this.sideNavPanel2.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel2.TabIndex = 6;
+            this.sideNavPanel2.Visible = false;
             // 
             // sideNavPanel8
             // 
@@ -989,287 +1273,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // toolStrip3
-            // 
-            this.toolStrip3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.toolStrip3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnNewSoftService,
-            this.toolStripSeparator9,
-            this.btnEditSoftService,
-            this.toolStripSeparator10,
-            this.btnDeleteSoftService,
-            this.toolStripSeparator11,
-            this.toolStripButton4,
-            this.toolStripSeparator12,
-            this.toolStripLabel3,
-            this.txtFillterSoftService});
-            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStrip3.Size = new System.Drawing.Size(752, 62);
-            this.toolStrip3.TabIndex = 2;
-            this.toolStrip3.Text = "toolStrip3";
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(47, 59);
-            this.toolStripLabel3.Text = "جستجو: ";
-            // 
-            // txtFillterSoftService
-            // 
-            this.txtFillterSoftService.BackColor = System.Drawing.SystemColors.Info;
-            this.txtFillterSoftService.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFillterSoftService.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFillterSoftService.Name = "txtFillterSoftService";
-            this.txtFillterSoftService.Size = new System.Drawing.Size(100, 62);
-            // 
-            // dgvSoftService
-            // 
-            this.dgvSoftService.AllowUserToAddRows = false;
-            this.dgvSoftService.AllowUserToDeleteRows = false;
-            this.dgvSoftService.AllowUserToResizeColumns = false;
-            this.dgvSoftService.AllowUserToResizeRows = false;
-            this.dgvSoftService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSoftService.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvSoftService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSoftService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SoftServiceId,
-            this.SoftServiceName,
-            this.SoftServiceAmount,
-            this.SoftServiceCaption});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSoftService.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSoftService.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSoftService.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvSoftService.Location = new System.Drawing.Point(0, 62);
-            this.dgvSoftService.Name = "dgvSoftService";
-            this.dgvSoftService.ReadOnly = true;
-            this.dgvSoftService.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgvSoftService.Size = new System.Drawing.Size(752, 467);
-            this.dgvSoftService.TabIndex = 3;
-            // 
-            // SoftServiceId
-            // 
-            this.SoftServiceId.DataPropertyName = "SoftServiceId";
-            this.SoftServiceId.HeaderText = "SoftServiceId";
-            this.SoftServiceId.Name = "SoftServiceId";
-            this.SoftServiceId.ReadOnly = true;
-            this.SoftServiceId.Visible = false;
-            // 
-            // SoftServiceName
-            // 
-            this.SoftServiceName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.SoftServiceName.DataPropertyName = "SoftServiceName";
-            this.SoftServiceName.HeaderText = "نام";
-            this.SoftServiceName.Name = "SoftServiceName";
-            this.SoftServiceName.ReadOnly = true;
-            this.SoftServiceName.Width = 45;
-            // 
-            // SoftServiceAmount
-            // 
-            this.SoftServiceAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.SoftServiceAmount.DataPropertyName = "SoftServiceAmount";
-            this.SoftServiceAmount.HeaderText = "قیمت";
-            this.SoftServiceAmount.Name = "SoftServiceAmount";
-            this.SoftServiceAmount.ReadOnly = true;
-            this.SoftServiceAmount.Width = 58;
-            // 
-            // SoftServiceCaption
-            // 
-            this.SoftServiceCaption.DataPropertyName = "SoftServiceCaption";
-            this.SoftServiceCaption.HeaderText = "توضیحات";
-            this.SoftServiceCaption.Name = "SoftServiceCaption";
-            this.SoftServiceCaption.ReadOnly = true;
-            // 
-            // btnNewSoftService
-            // 
-            this.btnNewSoftService.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
-            this.btnNewSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnNewSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNewSoftService.Name = "btnNewSoftService";
-            this.btnNewSoftService.Size = new System.Drawing.Size(81, 59);
-            this.btnNewSoftService.Text = "افزودن خدمات";
-            this.btnNewSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNewSoftService.ToolTipText = "افزودن خدمات نرم افزاری جدید";
-            this.btnNewSoftService.Click += new System.EventHandler(this.btnNewSoftService_Click);
-            // 
-            // btnEditSoftService
-            // 
-            this.btnEditSoftService.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
-            this.btnEditSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnEditSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditSoftService.Name = "btnEditSoftService";
-            this.btnEditSoftService.Size = new System.Drawing.Size(84, 59);
-            this.btnEditSoftService.Text = "ویرایش خدمات";
-            this.btnEditSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditSoftService.ToolTipText = "ویرایش خدمات نرم افزاری";
-            // 
-            // btnDeleteSoftService
-            // 
-            this.btnDeleteSoftService.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
-            this.btnDeleteSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnDeleteSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDeleteSoftService.Name = "btnDeleteSoftService";
-            this.btnDeleteSoftService.Size = new System.Drawing.Size(73, 59);
-            this.btnDeleteSoftService.Text = "حذف خدمات";
-            this.btnDeleteSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnDeleteSoftService.Click += new System.EventHandler(this.btnDeleteSoftService_Click);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(71, 59);
-            this.toolStripButton4.Text = "همگام سازی";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton4.ToolTipText = "همگام سازی لیست";
-            // 
-            // btnNewItem
-            // 
-            this.btnNewItem.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
-            this.btnNewItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnNewItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNewItem.Name = "btnNewItem";
-            this.btnNewItem.Size = new System.Drawing.Size(63, 59);
-            this.btnNewItem.Text = "افزودن کالا";
-            this.btnNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNewItem.ToolTipText = "افزودن کالای جدید";
-            this.btnNewItem.Click += new System.EventHandler(this.btnNewItem_Click);
-            // 
-            // btnEditItem
-            // 
-            this.btnEditItem.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
-            this.btnEditItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnEditItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditItem.Name = "btnEditItem";
-            this.btnEditItem.Size = new System.Drawing.Size(66, 59);
-            this.btnEditItem.Text = "ویرایش کالا";
-            this.btnEditItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditItem.ToolTipText = "ویرایش کالا";
-            this.btnEditItem.Click += new System.EventHandler(this.btnEditItem_Click);
-            // 
-            // btnDeleteItem
-            // 
-            this.btnDeleteItem.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
-            this.btnDeleteItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnDeleteItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDeleteItem.Name = "btnDeleteItem";
-            this.btnDeleteItem.Size = new System.Drawing.Size(55, 59);
-            this.btnDeleteItem.Text = "حذف کالا";
-            this.btnDeleteItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
-            // 
-            // btnRefreshItem
-            // 
-            this.btnRefreshItem.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
-            this.btnRefreshItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnRefreshItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefreshItem.Name = "btnRefreshItem";
-            this.btnRefreshItem.Size = new System.Drawing.Size(71, 59);
-            this.btnRefreshItem.Text = "همگام سازی";
-            this.btnRefreshItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnRefreshItem.ToolTipText = "همگام سازی لیست";
-            this.btnRefreshItem.Click += new System.EventHandler(this.btnRefreshItem_Click);
-            // 
-            // btnNewCustomer
-            // 
-            this.btnNewCustomer.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
-            this.btnNewCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnNewCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNewCustomer.Name = "btnNewCustomer";
-            this.btnNewCustomer.Size = new System.Drawing.Size(80, 59);
-            this.btnNewCustomer.Text = "افزودن شخص";
-            this.btnNewCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNewCustomer.ToolTipText = "افزودن شخص جدید";
-            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
-            // 
-            // btnEditCustomer
-            // 
-            this.btnEditCustomer.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
-            this.btnEditCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnEditCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditCustomer.Name = "btnEditCustomer";
-            this.btnEditCustomer.Size = new System.Drawing.Size(83, 59);
-            this.btnEditCustomer.Text = "ویرایش شخص";
-            this.btnEditCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditCustomer.ToolTipText = "ویرایش شخص";
-            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
-            // 
-            // btnDeleteCustomer
-            // 
-            this.btnDeleteCustomer.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
-            this.btnDeleteCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnDeleteCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(72, 59);
-            this.btnDeleteCustomer.Text = "حذف شخص";
-            this.btnDeleteCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
-            // 
-            // btnRefreshCustomer
-            // 
-            this.btnRefreshCustomer.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
-            this.btnRefreshCustomer.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnRefreshCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefreshCustomer.Name = "btnRefreshCustomer";
-            this.btnRefreshCustomer.Size = new System.Drawing.Size(71, 59);
-            this.btnRefreshCustomer.Text = "همگام سازی";
-            this.btnRefreshCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnRefreshCustomer.ToolTipText = "همگام سازی لیست";
-            this.btnRefreshCustomer.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::StoreAccounting.Properties.Resources.پوستر_مغازه;
-            this.pictureBox2.Location = new System.Drawing.Point(253, 21);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(147, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::StoreAccounting.Properties.Resources.LogoCoverLand;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 223);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1284,21 +1287,21 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sideNav1.ResumeLayout(false);
             this.sideNav1.PerformLayout();
+            this.sideNavPanel5.ResumeLayout(false);
+            this.sideNavPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).EndInit();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
             this.sideNavPanel4.ResumeLayout(false);
             this.sideNavPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
-            this.sideNavPanel5.ResumeLayout(false);
-            this.sideNavPanel5.PerformLayout();
-            this.sideNavPanel3.ResumeLayout(false);
-            this.sideNavPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.sideNavPanel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1312,11 +1315,11 @@
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sideNavPanel3.ResumeLayout(false);
+            this.sideNavPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -267,13 +267,37 @@ namespace StoreAccounting
             string ServiceName = dgvSoftService.CurrentRow.Cells[1].Value.ToString();
             using (UnitOfWork db=new UnitOfWork())
             {
-                if (RtlMessageBox.Show($"آیا از حذف {ServiceName} مطمئن هستید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (RtlMessageBox.Show($"آیا از حذف ({ServiceName}) مطمئن هستید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     db.GenericRepositorySoftService.Delete(Serviceid);
                     db.Save();
                 }
             }
             BindGridSoftSevice();
+        }
+
+        private void btnEditSoftService_Click(object sender, EventArgs e)
+        {
+            Services.frmServices frmSoftService = new Services.frmServices();
+            frmSoftService.frmId = 1;
+            frmSoftService.ServiceId = int.Parse(dgvSoftService.CurrentRow.Cells[0].Value.ToString());
+            if (frmSoftService.ShowDialog() == DialogResult.OK)
+            {
+                BindGridSoftSevice();
+            }
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            BindGridSoftSevice();
+        }
+
+        private void txtFillterSoftService_TextChanged(object sender, EventArgs e)
+        {
+            using (UnitOfWork db=new UnitOfWork())
+            {
+                dgvSoftService.DataSource = db.SoftService.GetServiceByFilter(txtFillterSoftService.Text);
+            }
         }
     }
 }

@@ -15,6 +15,7 @@ namespace StoreAccounting.Services
     public partial class frmServices : Form
     {
         public int frmId = 0;
+        public int ServiceId;
         public frmServices()
         {
             InitializeComponent();
@@ -27,7 +28,17 @@ namespace StoreAccounting.Services
 
         private void frmServices_Load(object sender, EventArgs e)
         {
-
+            if (frmId==1)
+            {
+                this.Text = "ویرایش خدمات نرم افزاری";
+                using (UnitOfWork db=new UnitOfWork())
+                {
+                    var select = db.GenericRepositorySoftService.GetById(ServiceId);
+                    txtServiceName.Text = select.SoftServiceName;
+                    txtServiceAmount.Value = (int)select.SoftServiceAmount;
+                    txtServiceCaptino.Text = select.SoftServiceCaption;
+                }
+            }
         }
 
         private void btnSub_Click(object sender, EventArgs e)
@@ -43,6 +54,13 @@ namespace StoreAccounting.Services
                 if (frmId == 0)
                 {
                     db.GenericRepositorySoftService.Insert(service);
+                    db.Save();
+                    DialogResult = DialogResult.OK;
+                }
+                if (frmId ==1)
+                {
+                    service.SoftServiceId = ServiceId;
+                    db.GenericRepositorySoftService.Update(service);
                     db.Save();
                     DialogResult = DialogResult.OK;
                 }

@@ -64,6 +64,18 @@ namespace Accounting.DataLayer.Context
            
         }
 
+        private SoftService _softService;
+        public SoftService SoftService
+        {
+            get
+            {
+                if (_softService==null)
+                {
+                    _softService = new SoftService(db);
+                }
+                return _softService;
+            }
+        }
 
         public void Save()
         {

@@ -130,10 +130,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmServices";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "افزودن خدمات";
+            this.Text = "افزودن خدمات نرم افزاری";
             this.Load += new System.EventHandler(this.frmServices_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtServiceAmount)).EndInit();
             this.ResumeLayout(false);
