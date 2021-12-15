@@ -63,6 +63,9 @@
     <Compile Include="Services\CustomerRepository.cs" />
     <Compile Include="Services\GenericRepository.cs" />
     <Compile Include="Services\ItemRepository.cs" />
+    <Compile Include="SoftService_TB.cs">
+      <DependentUpon>StoreAccounting_DbEn.tt</DependentUpon>
+    </Compile>
     <Compile Include="StoreAccounting_DbEn.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

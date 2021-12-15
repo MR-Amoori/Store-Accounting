@@ -50,6 +50,20 @@ namespace Accounting.DataLayer.Context
             }
         }
 
+        private GenericRepository<SoftService_TB> _genericRepositorySoftService;
+        public GenericRepository<SoftService_TB> GenericRepositorySoftService
+        {
+            get
+            {
+                if (_genericRepositorySoftService==null)
+                {
+                    _genericRepositorySoftService = new GenericRepository<SoftService_TB>(db);
+                }
+                return _genericRepositorySoftService;
+            }
+           
+        }
+
 
         public void Save()
         {

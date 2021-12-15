@@ -30,9 +30,19 @@
           <Property Name="ItemCaption" Type="nvarchar" MaxLength="50" />
           <Property Name="ItemBrand" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <EntityType Name="SoftService_TB">
+          <Key>
+            <PropertyRef Name="SoftServiceId" />
+          </Key>
+          <Property Name="SoftServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoftServiceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoftServiceAmount" Type="int" />
+          <Property Name="SoftServiceCaption" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityContainer Name="AccountingStore_DBModelStoreContainer">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Item_TB" EntityType="Self.Item_TB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftService_TB" EntityType="Self.SoftService_TB" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -53,6 +63,7 @@
         <EntityContainer Name="AccountingStore_DBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" />
           <EntitySet Name="Item_TB" EntityType="AccountingStore_DBModel.Item_TB" />
+          <EntitySet Name="SoftService_TB" EntityType="AccountingStore_DBModel.SoftService_TB" />
         </EntityContainer>
         <EntityType Name="Item_TB">
           <Key>
@@ -66,6 +77,15 @@
           <Property Name="ItemNumber" Type="Int32" Nullable="false" />
           <Property Name="ItemCaption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ItemBrand" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SoftService_TB">
+          <Key>
+            <PropertyRef Name="SoftServiceId" />
+          </Key>
+          <Property Name="SoftServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoftServiceName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoftServiceAmount" Type="Int32" />
+          <Property Name="SoftServiceCaption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -97,6 +117,16 @@
                 <ScalarProperty Name="ItemName" ColumnName="ItemName" />
                 <ScalarProperty Name="ItemIdView" ColumnName="ItemIdView" />
                 <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoftService_TB">
+            <EntityTypeMapping TypeName="AccountingStore_DBModel.SoftService_TB">
+              <MappingFragment StoreEntitySet="SoftService_TB">
+                <ScalarProperty Name="SoftServiceCaption" ColumnName="SoftServiceCaption" />
+                <ScalarProperty Name="SoftServiceAmount" ColumnName="SoftServiceAmount" />
+                <ScalarProperty Name="SoftServiceName" ColumnName="SoftServiceName" />
+                <ScalarProperty Name="SoftServiceId" ColumnName="SoftServiceId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

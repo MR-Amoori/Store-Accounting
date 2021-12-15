@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             DevComponents.DotNetBar.Controls.ClockStyleData clockStyleData1 = new DevComponents.DotNetBar.Controls.ClockStyleData();
             DevComponents.DotNetBar.Controls.ColorData colorData1 = new DevComponents.DotNetBar.Controls.ColorData();
             DevComponents.DotNetBar.Controls.ColorData colorData2 = new DevComponents.DotNetBar.Controls.ColorData();
@@ -45,6 +46,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sideNav1 = new DevComponents.DotNetBar.Controls.SideNav();
             this.sideNavPanel4 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.dgvItems = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemIdView = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemAmountKharid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemAmountrosh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnNewItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -56,6 +66,8 @@
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.txtFilterItem = new System.Windows.Forms.ToolStripTextBox();
+            this.sideNavPanel5 = new DevComponents.DotNetBar.Controls.SideNavPanel();
+            this.sideNavPanel9 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel3 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.dgvCustomers = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,8 +110,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.AnalogClock = new DevComponents.DotNetBar.Controls.AnalogClockControl();
             this.txtDateTime = new System.Windows.Forms.Label();
-            this.sideNavPanel5 = new DevComponents.DotNetBar.Controls.SideNavPanel();
-            this.sideNavPanel9 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel8 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel7 = new DevComponents.DotNetBar.Controls.SideNavPanel();
             this.sideNavPanel6 = new DevComponents.DotNetBar.Controls.SideNavPanel();
@@ -115,18 +125,27 @@
             this.sideNavItem2 = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.mnAbout = new DevComponents.DotNetBar.Controls.SideNavItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dgvItems = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemIdView = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemAmountKharid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemAmountrosh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.btnNewSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnEditSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDeleteSoftService = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.txtFillterSoftService = new System.Windows.Forms.ToolStripTextBox();
+            this.dgvSoftService = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.SoftServiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoftServiceCaption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sideNav1.SuspendLayout();
             this.sideNavPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.toolStrip2.SuspendLayout();
+            this.sideNavPanel5.SuspendLayout();
             this.sideNavPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -141,15 +160,16 @@
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
+            this.toolStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).BeginInit();
             this.SuspendLayout();
             // 
             // sideNav1
             // 
-            this.sideNav1.Controls.Add(this.sideNavPanel4);
             this.sideNav1.Controls.Add(this.sideNavPanel5);
-            this.sideNav1.Controls.Add(this.sideNavPanel9);
+            this.sideNav1.Controls.Add(this.sideNavPanel4);
             this.sideNav1.Controls.Add(this.sideNavPanel3);
+            this.sideNav1.Controls.Add(this.sideNavPanel9);
             this.sideNav1.Controls.Add(this.sideNavPanel2);
             this.sideNav1.Controls.Add(this.sideNavPanel1);
             this.sideNav1.Controls.Add(this.sideNavPanel8);
@@ -189,6 +209,112 @@
             this.sideNavPanel4.Name = "sideNavPanel4";
             this.sideNavPanel4.Size = new System.Drawing.Size(752, 529);
             this.sideNavPanel4.TabIndex = 18;
+            this.sideNavPanel4.Visible = false;
+            // 
+            // dgvItems
+            // 
+            this.dgvItems.AllowUserToAddRows = false;
+            this.dgvItems.AllowUserToDeleteRows = false;
+            this.dgvItems.AllowUserToResizeColumns = false;
+            this.dgvItems.AllowUserToResizeRows = false;
+            this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvItems.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemId,
+            this.ItemName,
+            this.ItemIdView,
+            this.ItemBrand,
+            this.ItemNumber,
+            this.ItemAmountKharid,
+            this.ItemAmountrosh,
+            this.ItemCaption});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItems.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvItems.Location = new System.Drawing.Point(0, 62);
+            this.dgvItems.Name = "dgvItems";
+            this.dgvItems.ReadOnly = true;
+            this.dgvItems.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvItems.Size = new System.Drawing.Size(752, 467);
+            this.dgvItems.TabIndex = 2;
+            // 
+            // ItemId
+            // 
+            this.ItemId.DataPropertyName = "ItemId";
+            this.ItemId.HeaderText = "ItemId";
+            this.ItemId.Name = "ItemId";
+            this.ItemId.ReadOnly = true;
+            this.ItemId.Visible = false;
+            // 
+            // ItemName
+            // 
+            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "نام کالا";
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 63;
+            // 
+            // ItemIdView
+            // 
+            this.ItemIdView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemIdView.DataPropertyName = "ItemIdView";
+            this.ItemIdView.HeaderText = "کد کالا";
+            this.ItemIdView.Name = "ItemIdView";
+            this.ItemIdView.ReadOnly = true;
+            this.ItemIdView.Width = 61;
+            // 
+            // ItemBrand
+            // 
+            this.ItemBrand.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemBrand.DataPropertyName = "ItemBrand";
+            this.ItemBrand.HeaderText = "برند کالا";
+            this.ItemBrand.Name = "ItemBrand";
+            this.ItemBrand.ReadOnly = true;
+            this.ItemBrand.Width = 67;
+            // 
+            // ItemNumber
+            // 
+            this.ItemNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemNumber.DataPropertyName = "ItemNumber";
+            this.ItemNumber.HeaderText = "تعداد کالا";
+            this.ItemNumber.Name = "ItemNumber";
+            this.ItemNumber.ReadOnly = true;
+            this.ItemNumber.Width = 73;
+            // 
+            // ItemAmountKharid
+            // 
+            this.ItemAmountKharid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemAmountKharid.DataPropertyName = "ItemAmountKharid";
+            this.ItemAmountKharid.HeaderText = "قیمت خرید";
+            this.ItemAmountKharid.Name = "ItemAmountKharid";
+            this.ItemAmountKharid.ReadOnly = true;
+            this.ItemAmountKharid.Width = 82;
+            // 
+            // ItemAmountrosh
+            // 
+            this.ItemAmountrosh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ItemAmountrosh.DataPropertyName = "ItemAmountrosh";
+            this.ItemAmountrosh.HeaderText = "قیمت فروش";
+            this.ItemAmountrosh.Name = "ItemAmountrosh";
+            this.ItemAmountrosh.ReadOnly = true;
+            this.ItemAmountrosh.Width = 89;
+            // 
+            // ItemCaption
+            // 
+            this.ItemCaption.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ItemCaption.DataPropertyName = "ItemCaption";
+            this.ItemCaption.HeaderText = "توضیحات";
+            this.ItemCaption.Name = "ItemCaption";
+            this.ItemCaption.ReadOnly = true;
             // 
             // toolStrip2
             // 
@@ -221,7 +347,7 @@
             this.btnNewItem.Size = new System.Drawing.Size(63, 59);
             this.btnNewItem.Text = "افزودن کالا";
             this.btnNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNewItem.ToolTipText = "افزودن شخص جدید";
+            this.btnNewItem.ToolTipText = "افزودن کالای جدید";
             this.btnNewItem.Click += new System.EventHandler(this.btnNewItem_Click);
             // 
             // toolStripSeparator5
@@ -238,7 +364,7 @@
             this.btnEditItem.Size = new System.Drawing.Size(66, 59);
             this.btnEditItem.Text = "ویرایش کالا";
             this.btnEditItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditItem.ToolTipText = "ویرایش شخص";
+            this.btnEditItem.ToolTipText = "ویرایش کالا";
             this.btnEditItem.Click += new System.EventHandler(this.btnEditItem_Click);
             // 
             // toolStripSeparator6
@@ -294,6 +420,27 @@
             this.txtFilterItem.Size = new System.Drawing.Size(100, 62);
             this.txtFilterItem.TextChanged += new System.EventHandler(this.txtFilterItem_TextChanged);
             // 
+            // sideNavPanel5
+            // 
+            this.sideNavPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel5.Controls.Add(this.dgvSoftService);
+            this.sideNavPanel5.Controls.Add(this.toolStrip3);
+            this.sideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel5.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel5.Name = "sideNavPanel5";
+            this.sideNavPanel5.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel5.TabIndex = 22;
+            // 
+            // sideNavPanel9
+            // 
+            this.sideNavPanel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sideNavPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideNavPanel9.Location = new System.Drawing.Point(142, 31);
+            this.sideNavPanel9.Name = "sideNavPanel9";
+            this.sideNavPanel9.Size = new System.Drawing.Size(752, 529);
+            this.sideNavPanel9.TabIndex = 38;
+            this.sideNavPanel9.Visible = false;
+            // 
             // sideNavPanel3
             // 
             this.sideNavPanel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -323,14 +470,14 @@
             this.Email,
             this.Address,
             this.Reference});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvCustomers.Location = new System.Drawing.Point(0, 62);
@@ -819,26 +966,6 @@
             this.txtDateTime.TabIndex = 2;
             this.txtDateTime.Text = "*تاریخ*";
             // 
-            // sideNavPanel5
-            // 
-            this.sideNavPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel5.Location = new System.Drawing.Point(142, 31);
-            this.sideNavPanel5.Name = "sideNavPanel5";
-            this.sideNavPanel5.Size = new System.Drawing.Size(752, 529);
-            this.sideNavPanel5.TabIndex = 22;
-            this.sideNavPanel5.Visible = false;
-            // 
-            // sideNavPanel9
-            // 
-            this.sideNavPanel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.sideNavPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideNavPanel9.Location = new System.Drawing.Point(142, 31);
-            this.sideNavPanel9.Name = "sideNavPanel9";
-            this.sideNavPanel9.Size = new System.Drawing.Size(752, 529);
-            this.sideNavPanel9.TabIndex = 38;
-            this.sideNavPanel9.Visible = false;
-            // 
             // sideNavPanel8
             // 
             this.sideNavPanel8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -916,7 +1043,6 @@
             // 
             // mnItems
             // 
-            this.mnItems.Checked = true;
             this.mnItems.Name = "mnItems";
             this.mnItems.Panel = this.sideNavPanel4;
             this.mnItems.Symbol = "";
@@ -926,6 +1052,7 @@
             // 
             // mnServicesSoft
             // 
+            this.mnServicesSoft.Checked = true;
             this.mnServicesSoft.Name = "mnServicesSoft";
             this.mnServicesSoft.Panel = this.sideNavPanel5;
             this.mnServicesSoft.Symbol = "58149";
@@ -978,24 +1105,119 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // dgvItems
+            // toolStrip3
             // 
-            this.dgvItems.AllowUserToAddRows = false;
-            this.dgvItems.AllowUserToDeleteRows = false;
-            this.dgvItems.AllowUserToResizeColumns = false;
-            this.dgvItems.AllowUserToResizeRows = false;
-            this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvItems.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ItemId,
-            this.ItemName,
-            this.ItemIdView,
-            this.ItemBrand,
-            this.ItemNumber,
-            this.ItemAmountKharid,
-            this.ItemAmountrosh,
-            this.ItemCaption});
+            this.toolStrip3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toolStrip3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNewSoftService,
+            this.toolStripSeparator9,
+            this.btnEditSoftService,
+            this.toolStripSeparator10,
+            this.btnDeleteSoftService,
+            this.toolStripSeparator11,
+            this.toolStripButton4,
+            this.toolStripSeparator12,
+            this.toolStripLabel3,
+            this.txtFillterSoftService});
+            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip3.Size = new System.Drawing.Size(752, 62);
+            this.toolStrip3.TabIndex = 2;
+            this.toolStrip3.Text = "toolStrip3";
+            // 
+            // btnNewSoftService
+            // 
+            this.btnNewSoftService.Image = global::StoreAccounting.Properties.Resources._1371475930_filenew;
+            this.btnNewSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnNewSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNewSoftService.Name = "btnNewSoftService";
+            this.btnNewSoftService.Size = new System.Drawing.Size(81, 59);
+            this.btnNewSoftService.Text = "افزودن خدمات";
+            this.btnNewSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNewSoftService.ToolTipText = "افزودن خدمات نرم افزاری جدید";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnEditSoftService
+            // 
+            this.btnEditSoftService.Image = global::StoreAccounting.Properties.Resources._1371475973_document_edit;
+            this.btnEditSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnEditSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditSoftService.Name = "btnEditSoftService";
+            this.btnEditSoftService.Size = new System.Drawing.Size(84, 59);
+            this.btnEditSoftService.Text = "ویرایش خدمات";
+            this.btnEditSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditSoftService.ToolTipText = "ویرایش خدمات نرم افزاری";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 62);
+            // 
+            // btnDeleteSoftService
+            // 
+            this.btnDeleteSoftService.Image = global::StoreAccounting.Properties.Resources._1371476007_Close_Box_Red;
+            this.btnDeleteSoftService.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnDeleteSoftService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDeleteSoftService.Name = "btnDeleteSoftService";
+            this.btnDeleteSoftService.Size = new System.Drawing.Size(73, 59);
+            this.btnDeleteSoftService.Text = "حذف خدمات";
+            this.btnDeleteSoftService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = global::StoreAccounting.Properties.Resources._1371476342_Refresh;
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(71, 59);
+            this.toolStripButton4.Text = "همگام سازی";
+            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton4.ToolTipText = "همگام سازی لیست";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(47, 59);
+            this.toolStripLabel3.Text = "جستجو: ";
+            // 
+            // txtFillterSoftService
+            // 
+            this.txtFillterSoftService.BackColor = System.Drawing.SystemColors.Info;
+            this.txtFillterSoftService.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFillterSoftService.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFillterSoftService.Name = "txtFillterSoftService";
+            this.txtFillterSoftService.Size = new System.Drawing.Size(100, 62);
+            // 
+            // dgvSoftService
+            // 
+            this.dgvSoftService.AllowUserToAddRows = false;
+            this.dgvSoftService.AllowUserToDeleteRows = false;
+            this.dgvSoftService.AllowUserToResizeColumns = false;
+            this.dgvSoftService.AllowUserToResizeRows = false;
+            this.dgvSoftService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSoftService.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvSoftService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSoftService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SoftServiceId,
+            this.SoftServiceName,
+            this.SoftServiceAmount,
+            this.SoftServiceCaption});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1003,85 +1225,48 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvItems.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvItems.Location = new System.Drawing.Point(0, 62);
-            this.dgvItems.Name = "dgvItems";
-            this.dgvItems.ReadOnly = true;
-            this.dgvItems.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgvItems.Size = new System.Drawing.Size(752, 467);
-            this.dgvItems.TabIndex = 2;
+            this.dgvSoftService.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSoftService.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSoftService.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvSoftService.Location = new System.Drawing.Point(0, 62);
+            this.dgvSoftService.Name = "dgvSoftService";
+            this.dgvSoftService.ReadOnly = true;
+            this.dgvSoftService.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvSoftService.Size = new System.Drawing.Size(752, 467);
+            this.dgvSoftService.TabIndex = 3;
             // 
-            // ItemId
+            // SoftServiceId
             // 
-            this.ItemId.DataPropertyName = "ItemId";
-            this.ItemId.HeaderText = "ItemId";
-            this.ItemId.Name = "ItemId";
-            this.ItemId.ReadOnly = true;
-            this.ItemId.Visible = false;
+            this.SoftServiceId.DataPropertyName = "SoftServiceId";
+            this.SoftServiceId.HeaderText = "SoftServiceId";
+            this.SoftServiceId.Name = "SoftServiceId";
+            this.SoftServiceId.ReadOnly = true;
+            this.SoftServiceId.Visible = false;
             // 
-            // ItemName
+            // SoftServiceName
             // 
-            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemName.DataPropertyName = "ItemName";
-            this.ItemName.HeaderText = "نام کالا";
-            this.ItemName.Name = "ItemName";
-            this.ItemName.ReadOnly = true;
-            this.ItemName.Width = 63;
+            this.SoftServiceName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SoftServiceName.DataPropertyName = "SoftServiceName";
+            this.SoftServiceName.HeaderText = "نام";
+            this.SoftServiceName.Name = "SoftServiceName";
+            this.SoftServiceName.ReadOnly = true;
+            this.SoftServiceName.Width = 45;
             // 
-            // ItemIdView
+            // SoftServiceAmount
             // 
-            this.ItemIdView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemIdView.DataPropertyName = "ItemIdView";
-            this.ItemIdView.HeaderText = "کد کالا";
-            this.ItemIdView.Name = "ItemIdView";
-            this.ItemIdView.ReadOnly = true;
-            this.ItemIdView.Width = 61;
+            this.SoftServiceAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SoftServiceAmount.DataPropertyName = "SoftServiceAmount";
+            this.SoftServiceAmount.HeaderText = "قیمت";
+            this.SoftServiceAmount.Name = "SoftServiceAmount";
+            this.SoftServiceAmount.ReadOnly = true;
+            this.SoftServiceAmount.Width = 58;
             // 
-            // ItemBrand
+            // SoftServiceCaption
             // 
-            this.ItemBrand.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemBrand.DataPropertyName = "ItemBrand";
-            this.ItemBrand.HeaderText = "برند کالا";
-            this.ItemBrand.Name = "ItemBrand";
-            this.ItemBrand.ReadOnly = true;
-            this.ItemBrand.Width = 67;
-            // 
-            // ItemNumber
-            // 
-            this.ItemNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemNumber.DataPropertyName = "ItemNumber";
-            this.ItemNumber.HeaderText = "تعداد کالا";
-            this.ItemNumber.Name = "ItemNumber";
-            this.ItemNumber.ReadOnly = true;
-            this.ItemNumber.Width = 73;
-            // 
-            // ItemAmountKharid
-            // 
-            this.ItemAmountKharid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemAmountKharid.DataPropertyName = "ItemAmountKharid";
-            this.ItemAmountKharid.HeaderText = "قیمت خرید";
-            this.ItemAmountKharid.Name = "ItemAmountKharid";
-            this.ItemAmountKharid.ReadOnly = true;
-            this.ItemAmountKharid.Width = 82;
-            // 
-            // ItemAmountrosh
-            // 
-            this.ItemAmountrosh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ItemAmountrosh.DataPropertyName = "ItemAmountrosh";
-            this.ItemAmountrosh.HeaderText = "قیمت فروش";
-            this.ItemAmountrosh.Name = "ItemAmountrosh";
-            this.ItemAmountrosh.ReadOnly = true;
-            this.ItemAmountrosh.Width = 89;
-            // 
-            // ItemCaption
-            // 
-            this.ItemCaption.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ItemCaption.DataPropertyName = "ItemCaption";
-            this.ItemCaption.HeaderText = "توضیحات";
-            this.ItemCaption.Name = "ItemCaption";
-            this.ItemCaption.ReadOnly = true;
+            this.SoftServiceCaption.DataPropertyName = "SoftServiceCaption";
+            this.SoftServiceCaption.HeaderText = "توضیحات";
+            this.SoftServiceCaption.Name = "SoftServiceCaption";
+            this.SoftServiceCaption.ReadOnly = true;
             // 
             // Form1
             // 
@@ -1099,8 +1284,11 @@
             this.sideNav1.PerformLayout();
             this.sideNavPanel4.ResumeLayout(false);
             this.sideNavPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            this.sideNavPanel5.ResumeLayout(false);
+            this.sideNavPanel5.PerformLayout();
             this.sideNavPanel3.ResumeLayout(false);
             this.sideNavPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
@@ -1124,7 +1312,9 @@
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSoftService)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1211,6 +1401,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmountKharid;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmountrosh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCaption;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dgvSoftService;
+        private System.Windows.Forms.ToolStrip toolStrip3;
+        private System.Windows.Forms.ToolStripButton btnNewSoftService;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton btnEditSoftService;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripButton btnDeleteSoftService;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripTextBox txtFillterSoftService;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoftServiceId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoftServiceName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoftServiceAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoftServiceCaption;
     }
 }
 

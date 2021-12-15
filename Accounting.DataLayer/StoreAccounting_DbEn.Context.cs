@@ -36,6 +36,8 @@ public partial class AccountingStore_DBEntities : DbContext
 
     public virtual DbSet<Item_TB> Item_TB { get; set; }
 
+    public virtual DbSet<SoftService_TB> SoftService_TB { get; set; }
+
 }
 
 }

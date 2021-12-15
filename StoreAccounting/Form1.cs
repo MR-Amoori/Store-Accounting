@@ -79,9 +79,20 @@ namespace StoreAccounting
             }
         }
 
-        void DisposMnItem() //بهینه کردن جدول کالا ها
+        void BindGridSoftSevice() //واکشی اطلاعات جدول خدمات نرم افزاری
         {
+            dgvSoftService.AutoGenerateColumns = false;
+            using (UnitOfWork db=new UnitOfWork())
+            {
+                dgvSoftService.DataSource = db.GenericRepositorySoftService.Get();
+            }
+        }
+
+        void DisposMn() // برای خالی کردن دیتا گرید ویو ها که منابع سیستم کمتر استفاده بشه
+        {
+            dgvCustomers.DataSource = null;
             dgvItems.DataSource = null;
+            dgvSoftService.DataSource = null;
         }
 
         private void btnEditCustomer_Click(object sender, EventArgs e)
@@ -135,12 +146,6 @@ namespace StoreAccounting
             DisposMn(); // استفاده از متد برای بهینه کردن منابع سیستم
         }
 
-        void DisposMn() // برای خالی کردن دیتا گرید ویو منوی اشخاص که منابع سیستم کمتر استفاده بشه
-        {
-            dgvCustomers.DataSource = null;
-            dgvItems.DataSource = null;
-        }
-
         private void mnReports_Click(object sender, EventArgs e)
         {
             DisposMn();
@@ -155,6 +160,7 @@ namespace StoreAccounting
         private void mnServicesSoft_Click(object sender, EventArgs e)
         {
             DisposMn();
+            BindGridSoftSevice();
         }
 
         private void sideNavItem3_Click(object sender, EventArgs e)

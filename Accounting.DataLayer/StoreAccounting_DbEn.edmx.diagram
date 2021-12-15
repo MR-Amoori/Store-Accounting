@@ -7,6 +7,7 @@
       <Diagram DiagramId="6319669735b8449f829127a5c9f2fedb" Name="Diagram1">
         <EntityTypeShape EntityType="AccountingStore_DBModel.Customer_TB" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AccountingStore_DBModel.Item_TB" Width="1.5" PointX="5.625" PointY="1" />
+        <EntityTypeShape EntityType="AccountingStore_DBModel.SoftService_TB" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
