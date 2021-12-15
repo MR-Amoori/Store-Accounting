@@ -42,6 +42,8 @@
             this.txtAmountKharidItem = new System.Windows.Forms.NumericUpDown();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdViewIdtem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumberItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmountFroshItem)).BeginInit();
@@ -69,7 +71,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(341, 47);
+            this.label4.Location = new System.Drawing.Point(130, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 0;
@@ -120,6 +122,11 @@
             // txtIdViewIdtem
             // 
             this.txtIdViewIdtem.Location = new System.Drawing.Point(4, 7);
+            this.txtIdViewIdtem.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
             this.txtIdViewIdtem.Name = "txtIdViewIdtem";
             this.txtIdViewIdtem.Size = new System.Drawing.Size(120, 22);
             this.txtIdViewIdtem.TabIndex = 1;
@@ -127,13 +134,23 @@
             // txtNumberItem
             // 
             this.txtNumberItem.Location = new System.Drawing.Point(4, 42);
+            this.txtNumberItem.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
             this.txtNumberItem.Name = "txtNumberItem";
-            this.txtNumberItem.Size = new System.Drawing.Size(331, 22);
+            this.txtNumberItem.Size = new System.Drawing.Size(120, 22);
             this.txtNumberItem.TabIndex = 3;
             // 
             // txtAmountFroshItem
             // 
             this.txtAmountFroshItem.Location = new System.Drawing.Point(4, 79);
+            this.txtAmountFroshItem.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
             this.txtAmountFroshItem.Name = "txtAmountFroshItem";
             this.txtAmountFroshItem.Size = new System.Drawing.Size(120, 22);
             this.txtAmountFroshItem.TabIndex = 5;
@@ -141,6 +158,11 @@
             // txtAmountKharidItem
             // 
             this.txtAmountKharidItem.Location = new System.Drawing.Point(200, 79);
+            this.txtAmountKharidItem.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
             this.txtAmountKharidItem.Name = "txtAmountKharidItem";
             this.txtAmountKharidItem.Size = new System.Drawing.Size(135, 22);
             this.txtAmountKharidItem.TabIndex = 4;
@@ -165,12 +187,30 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(200, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(135, 22);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(341, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "برند کالا:";
+            // 
             // frmItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(410, 304);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtAmountKharidItem);
@@ -217,5 +257,7 @@
         private System.Windows.Forms.NumericUpDown txtAmountKharidItem;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
