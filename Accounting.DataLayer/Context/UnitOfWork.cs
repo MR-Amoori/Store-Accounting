@@ -77,6 +77,18 @@ namespace Accounting.DataLayer.Context
             }
         }
 
+        private GenericRepository<HardService_TB> _genericRepositoryHardService;
+        public GenericRepository<HardService_TB> GenericRepositoryHardService
+        {
+            get
+            {
+                if (_genericRepositoryHardService==null)
+                {
+                    _genericRepositoryHardService = new GenericRepository<HardService_TB>(db);
+                }
+                return _genericRepositoryHardService;
+            }
+        }
         public void Save()
         {
             db.SaveChanges();

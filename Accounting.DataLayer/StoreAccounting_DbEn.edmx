@@ -17,6 +17,15 @@
           <Property Name="Address" Type="nvarchar" MaxLength="150" />
           <Property Name="Reference" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="HardService_TB">
+          <Key>
+            <PropertyRef Name="HardServiceId" />
+          </Key>
+          <Property Name="HardServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HardServiceName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="HardServiceAmount" Type="int" />
+          <Property Name="HardServiceCaption" Type="nvarchar" MaxLength="1500" />
+        </EntityType>
         <EntityType Name="Item_TB">
           <Key>
             <PropertyRef Name="ItemId" />
@@ -41,6 +50,7 @@
         </EntityType>
         <EntityContainer Name="AccountingStore_DBModelStoreContainer">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HardService_TB" EntityType="Self.HardService_TB" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Item_TB" EntityType="Self.Item_TB" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SoftService_TB" EntityType="Self.SoftService_TB" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -64,6 +74,7 @@
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" />
           <EntitySet Name="Item_TB" EntityType="AccountingStore_DBModel.Item_TB" />
           <EntitySet Name="SoftService_TB" EntityType="AccountingStore_DBModel.SoftService_TB" />
+          <EntitySet Name="HardService_TB" EntityType="AccountingStore_DBModel.HardService_TB" />
         </EntityContainer>
         <EntityType Name="Item_TB">
           <Key>
@@ -86,6 +97,15 @@
           <Property Name="SoftServiceName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="SoftServiceAmount" Type="Int32" />
           <Property Name="SoftServiceCaption" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HardService_TB">
+          <Key>
+            <PropertyRef Name="HardServiceId" />
+          </Key>
+          <Property Name="HardServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HardServiceName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="HardServiceAmount" Type="Int32" />
+          <Property Name="HardServiceCaption" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -127,6 +147,16 @@
                 <ScalarProperty Name="SoftServiceAmount" ColumnName="SoftServiceAmount" />
                 <ScalarProperty Name="SoftServiceName" ColumnName="SoftServiceName" />
                 <ScalarProperty Name="SoftServiceId" ColumnName="SoftServiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HardService_TB">
+            <EntityTypeMapping TypeName="AccountingStore_DBModel.HardService_TB">
+              <MappingFragment StoreEntitySet="HardService_TB">
+                <ScalarProperty Name="HardServiceCaption" ColumnName="HardServiceCaption" />
+                <ScalarProperty Name="HardServiceAmount" ColumnName="HardServiceAmount" />
+                <ScalarProperty Name="HardServiceName" ColumnName="HardServiceName" />
+                <ScalarProperty Name="HardServiceId" ColumnName="HardServiceId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -88,6 +88,15 @@ namespace StoreAccounting
             }
         }
 
+        void BindGridHardService() //واکشی اطلاعات جدول خدمات سخت افزاری
+        {
+            dgvHardService.AutoGenerateColumns = false;
+            using (UnitOfWork db=new UnitOfWork())
+            {
+                dgvHardService.DataSource = db.GenericRepositoryHardService.Get();
+            }
+        }
+
         void DisposMn() // برای خالی کردن دیتا گرید ویو ها که منابع سیستم کمتر استفاده بشه
         {
             dgvCustomers.DataSource = null;
@@ -166,6 +175,7 @@ namespace StoreAccounting
         private void sideNavItem3_Click(object sender, EventArgs e)
         {
             DisposMn();
+            BindGridHardService();
         }
 
         private void mnNewAccounting_Click(object sender, EventArgs e)
@@ -298,6 +308,11 @@ namespace StoreAccounting
             {
                 dgvSoftService.DataSource = db.SoftService.GetServiceByFilter(txtFillterSoftService.Text);
             }
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            BindGridHardService();
         }
     }
 }

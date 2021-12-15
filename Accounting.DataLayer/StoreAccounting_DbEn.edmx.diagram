@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="AccountingStore_DBModel.Customer_TB" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AccountingStore_DBModel.Item_TB" Width="1.5" PointX="5.625" PointY="1" />
         <EntityTypeShape EntityType="AccountingStore_DBModel.SoftService_TB" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="AccountingStore_DBModel.HardService_TB" Width="1.5" PointX="3.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
