@@ -35,9 +35,9 @@
             <PropertyRef Name="SoftServiceId" />
           </Key>
           <Property Name="SoftServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="SoftServiceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoftServiceName" Type="nvarchar" MaxLength="500" Nullable="false" />
           <Property Name="SoftServiceAmount" Type="int" />
-          <Property Name="SoftServiceCaption" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoftServiceCaption" Type="nvarchar" MaxLength="1500" />
         </EntityType>
         <EntityContainer Name="AccountingStore_DBModelStoreContainer">
           <EntitySet Name="Customer_TB" EntityType="Self.Customer_TB" Schema="dbo" store:Type="Tables" />
@@ -83,9 +83,9 @@
             <PropertyRef Name="SoftServiceId" />
           </Key>
           <Property Name="SoftServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="SoftServiceName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoftServiceName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="SoftServiceAmount" Type="Int32" />
-          <Property Name="SoftServiceCaption" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoftServiceCaption" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
