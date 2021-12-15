@@ -42,7 +42,7 @@
             this.txtAmountKharidItem = new System.Windows.Forms.NumericUpDown();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBrand = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdViewIdtem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumberItem)).BeginInit();
@@ -187,12 +187,12 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtBrand
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 22);
-            this.textBox1.TabIndex = 9;
+            this.txtBrand.Location = new System.Drawing.Point(200, 42);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.Size = new System.Drawing.Size(135, 22);
+            this.txtBrand.TabIndex = 2;
             // 
             // label3
             // 
@@ -209,7 +209,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(410, 304);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
@@ -257,7 +257,7 @@
         private System.Windows.Forms.NumericUpDown txtAmountKharidItem;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBrand;
         private System.Windows.Forms.Label label3;
     }
 }

@@ -32,6 +32,8 @@ public partial class Item_TB
 
     public string ItemCaption { get; set; }
 
+    public string ItemBrand { get; set; }
+
 }
 
 }

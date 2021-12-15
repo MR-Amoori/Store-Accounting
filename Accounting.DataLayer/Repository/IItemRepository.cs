@@ -11,6 +11,6 @@ namespace Accounting.DataLayer.Repository
         Item_TB GetItemById (int Id);
         bool DeleteItem(int Id);
         bool DeleteItem(Item_TB item);
-        IEnumerable<Customer_TB> GetCustomerByFilter(string Parameter);
+        IEnumerable<Item_TB> GetItemByFilter(string Parameter);
     }
 }

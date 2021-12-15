@@ -237,5 +237,13 @@ namespace StoreAccounting
                 }
             }
         }
+
+        private void txtFilterItem_TextChanged(object sender, EventArgs e)
+        {
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                dgvItems.DataSource = db.ItemRepository.GetItemByFilter(txtFilterItem.Text);
+            }
+        }
     }
 }

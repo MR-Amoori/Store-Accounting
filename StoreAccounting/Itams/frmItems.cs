@@ -37,6 +37,7 @@ namespace StoreAccounting.Itams
                 {
                     ItemIdView = (int)txtIdViewIdtem.Value,
                     ItemName = txtNameItem.Text,
+                    ItemBrand = txtBrand.Text,
                     ItemNumber = (int)txtNumberItem.Value,
                     ItemAmountKharid = (int)txtAmountKharidItem.Value,
                     ItemAmountrosh = (int)txtAmountFroshItem.Value,
@@ -72,6 +73,7 @@ namespace StoreAccounting.Itams
                 {
                     var SelectItem = db.ItemRepository.GetItemById(Id);
                     txtNameItem.Text = SelectItem.ItemName;
+                    txtBrand.Text = SelectItem.ItemBrand;
                     txtNumberItem.Value = SelectItem.ItemNumber;
                     txtIdViewIdtem.Value = SelectItem.ItemIdView;
                     txtCaption.Text = SelectItem.ItemCaption;
@@ -80,6 +82,12 @@ namespace StoreAccounting.Itams
                 }
 
             }
+        }
+
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

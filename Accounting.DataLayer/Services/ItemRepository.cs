@@ -44,9 +44,9 @@ namespace Accounting.DataLayer.Services
                 }
         }
 
-        public IEnumerable<Customer_TB> GetCustomerByFilter(string Parameter)
+        public IEnumerable<Item_TB> GetItemByFilter(string Parameter)
         {        
-               // return db.Item_TB.Where(p => p.ItemName.Contains(Parameter) || p.ItemIdView.Contains(int.Parse(Parameter))).ToList();
+                return db.Item_TB.Where(p => p.ItemName.Contains(Parameter) || p.ItemBrand.Contains(Parameter)).ToList();
         }
 
         public Item_TB GetItemById(int Id)
